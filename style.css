@@ -158,9 +158,9 @@ section{
 	}
 .menuppal{
     position: fixed;
+    top: 50px;
     right: 0;
-    padding: 10px;
-    
+    padding-right: 10px;    
 }
 .menuppal ul li {
     text-decoration: none;
