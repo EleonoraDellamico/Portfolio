@@ -48,6 +48,8 @@
   animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+  background-color: black;
+  color: white;
 }
 
 @keyframes type {
@@ -169,8 +171,21 @@ section{
 
 .link{
   text-decoration: none;
+  color: black;
+  opacity: 0.6; 
+}
+.home {
+  color: #ff2e63;
 }
 
+.menuppal ul li a:hover{
+  text-decoration:none;
+  opacity: 1;
+  color: #ff2e63;
+}
+.hidden{
+  display: none;
+}
 
 
 
