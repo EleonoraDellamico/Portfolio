@@ -40,7 +40,7 @@
 }
 
 .css-typing p:nth-child(3) {
-  width: 12.3em;
+  width: 13.3em;
   opacity: 0; 
   /* -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate; */
   animation: type2 2s steps(20, end), blink .5s step-end infinite alternate;
@@ -105,19 +105,31 @@
 /* MENU HAMBURGUER */
 section{
   background-image: url("./img/minimal.jpg");
-   height: 250px;
+  height: 250px;
   background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10px;
 }
 .hamburger{
   background-color:transparent;
 	height: fit-content;;
 	width: fit-content;
   padding:6px 6px;
-	cursor:pointer;
+  cursor:pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-top: 10px;
+  -webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
 }
 ._layer{
 	background: black;
@@ -126,13 +138,38 @@ section{
   width: 23px;
   height: 2px;
   opacity:1;
+  -webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 }
 
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.menuppal{
+    position: fixed;
+    right: 0;
+    padding: 10px;
+    margin-top: -90px;
+}
+.menuppal ul li {
+    text-decoration: none;
+    list-style: none;
+    font-family: monospace;
+    color: black;
+}
 
-
-
-
-
+.link{
+  text-decoration: none;
+}
 
 
 
