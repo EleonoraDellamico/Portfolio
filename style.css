@@ -119,7 +119,7 @@ section{
 	width: fit-content;
   padding:6px 6px;
   cursor:pointer;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   margin-right: 10px;
@@ -157,10 +157,12 @@ section{
 	transform:translateY(100%);
 	}
 .menuppal{
-    position: fixed;
-    top: 50px;
-    right: 0;
-    padding-right: 10px;    
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  margin-right: 32px;
+  padding: 8px 8px 8px 8px;   
 }
 .menuppal ul li {
     text-decoration: none;
@@ -264,7 +266,7 @@ span::after {
   background-size: contain;
   grid-column-start: 1;
   grid-column-end: 3;
-  height: 112px;
+  height: 126px;
 
 }
 .secondProject{
@@ -272,7 +274,7 @@ span::after {
   background-size: contain;
   grid-column-end: 5;
   grid-column-start: 3;
-  height: 99px;
+  height: 116px;
 }
 .thirdProject{
   background-image: url("./img/Pokemon.jpg");
