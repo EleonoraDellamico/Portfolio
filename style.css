@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 .css-typing{
- /* background-image: url("./img/minimal.jpg");*/
+ background-image: url("./img/minimal2.jpg");
   height: 250px;
   background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 10px;
+  padding-left: 18px;
   
 }
 .css-typing p {
@@ -106,7 +106,7 @@
 
 /* MENU HAMBURGUER */
 section{
-  background-image: url("./img/minimal2.jpg");
+ /* background-image: url("./img/minimal2.jpg");*/
   height: 250px;
   background-size: contain;
   display: flex;
@@ -188,13 +188,15 @@ section{
 }
 
 /*MAIN*/
+.main__container{
+  margin-left: 18px;
+    margin-right: 18px;
+}
 article{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 .main__title{
   font-size: 22px;
@@ -244,13 +246,68 @@ span::after {
 }
 
 
+/*PORTFOLIO*/
+.grid-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+.firstProject {
+  background-image: url("./img/Sea.jpg");
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 112px;
 
+}
+.secondProject{
+  background-image: url("./img/Superheros.jpg");
+  background-size: contain;
+  grid-column-end: 5;
+  grid-column-start: 3;
+  height: 99px;
+}
+.thirdProject{
+  background-image: url("./img/Pokemon.jpg");
+  background-size: contain;
+  height: 135px;
+  grid-row-start: 2;
+  grid-row-end: 5;
 
+}
+.fourthProject{
+  background-image: url("./img/Cinema.jpg");
+  background-size: contain;
+  height: 120px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
+.fifthProject{
+  background-image: url("./img/NY.jpg");
+  background-size: contain;
+  grid-row-end: 5;
+  grid-row-start: 2;
+  grid-column-end: 5;
+  grid-column-start: 2;
+}
 
-
-
-
-
-
-
+.sixthProject{
+  background-image: url("./img/MemoryCard.jpg");
+  background-size: contain;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.seventhProject{
+  background-image: url("./img/MemoryCard.jpg");
+  background-size: contain;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
