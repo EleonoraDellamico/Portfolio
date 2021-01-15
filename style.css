@@ -271,3 +271,21 @@ span::after {
 .btn:hover {
   background-color: #ddd;
 }
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.main__title .portfolio{
+    font-size: 22px;
+    font-family: 'Mulish', sans-serif;
+    width: 120px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
