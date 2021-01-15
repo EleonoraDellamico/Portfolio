@@ -249,67 +249,29 @@ span::after {
 
 
 /*PORTFOLIO*/
-.grid-container {
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 10px;
-}
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 30px;
-  text-align: center;
-}
-.firstProject {
-  background-image: url("./img/Sea.jpg");
-  background-size: contain;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  height: 126px;
-
-}
-.secondProject{
-  background-image: url("./img/Superheros.jpg");
-  background-size: contain;
-  grid-column-end: 5;
-  grid-column-start: 3;
-  height: 116px;
-}
-.thirdProject{
-  background-image: url("./img/Pokemon.jpg");
-  background-size: contain;
-  height: 135px;
-  grid-row-start: 2;
-  grid-row-end: 5;
-
-}
-.fourthProject{
-  background-image: url("./img/Cinema.jpg");
-  background-size: contain;
-  height: 120px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+#separtorPortfolio{
+  margin: -24px 0 30px;
 }
 
-.fifthProject{
-  background-image: url("./img/NY.jpg");
-  background-size: contain;
-  grid-row-end: 5;
-  grid-row-start: 2;
-  grid-column-end: 5;
-  grid-column-start: 2;
+.section__button{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
-.sixthProject{
-  background-image: url("./img/MemoryCard.jpg");
-  background-size: contain;
-  grid-column-start: 3;
-  grid-column-end: 5;
+.btn:hover {
+  background-color: #ddd;
 }
-.seventhProject{
-  background-image: url("./img/MemoryCard.jpg");
-  background-size: contain;
-  grid-column-start: 1;
-  grid-column-end: 5;
+.btn.active {
+  background-color: #666;
+  color: white;
 }
