@@ -248,6 +248,15 @@ span::after {
 
 
 /*PORTFOLIO*/
+
+.main__title .portfolio{
+    font-size: 22px;
+    font-family: 'Mulish', sans-serif;
+    width: 120px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+
 .portfolioArticle {
     display: flex;
     flex-direction: column;
@@ -287,16 +296,24 @@ span::after {
   display: flex;
   flex-direction: column;
 }
-
-
-
-.main__title .portfolio{
-    font-size: 22px;
-    font-family: 'Mulish', sans-serif;
-    width: 120px;
-    margin-bottom: 26px;
-    text-transform: uppercase;
+.container__htmlcss, .container__react, .container__javascript{
+  position: relative;
 }
+
+.linkProyect{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: black;
+  background-color: #f1f1f1;
+  padding: 3px 3px 3px 3px;
+  font-family: monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 
 /*CONTACT*/
 .contactArticle{
