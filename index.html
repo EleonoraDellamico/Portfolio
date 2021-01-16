@@ -12,7 +12,7 @@
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<section>
+		<section class="section__header">
 			<div class="hamburger" onclick="myFunction()">
 				<div class="_layer -top"></div>
 				<div class="_layer -mid"></div>
@@ -33,7 +33,7 @@
 			</div>
 		</section>
 		<main class="main__container">
-			<article class="main__article aboutMe">
+			<article class="main__article aboutMypresentation">
 				<h2 class="main__title aboutMe">About Me</h2>
 				<div class="separator">
 					<span></span>
@@ -64,9 +64,9 @@
 					comfort zone.' (John Maxwell).
 				</blockquote>
 			</article>
-			<article class="main__article">
+			<article class="main__article portfolioArticle">
 				<h2 class="main__title portfolio">Portfolio</h2>
-				<p class="main__text">Choose the project.</p>
+				<p class="main__text smallText">Choose the project.</p>
 			</article>
 			<div class="separator" id="separtorPortfolio">
 				<span></span>
@@ -139,13 +139,23 @@
 			</div>
 		</main>
 		<section class="section__contact">
-			<article class="main__article">
-				<h2 class="main__title portfolio">Portfolio</h2>
-			</article>
-			<div class="separator" id="separtorPortfolio">
-				<span></span>
-			</div>
+			<article class="main__article contactArticle">
+	<h2 class="main__title contactMe">Contact Me </h2>
+	<div class="separator">
+		<span></span>
+		<div class="form__container">
+		<form class='contactForm'>
+            <div class="main__label"><label>Your Name:</label><input type='text' value=''></div>
+            <div class="main__label"><label> Your Email:</label><input type='text' value=''></div>
+            <div class="main__label"><label>Subject:</label><input type='text' value=''></div>
+            <div class="main__label"><label>Message:</label><textarea rows='6'></textarea></div>
+            <div class="main__label"><input class="inputMessage" type='submit' value='Submit'></div>
+		</form>
+		</div>
 		</section>
+		<fotter class="footer__container">
+
+		</fotter>
 		<script src="index.js"></script>
 	</body>
 </html>

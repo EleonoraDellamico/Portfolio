@@ -192,18 +192,18 @@ section{
 /*MAIN*/
 .main__container{
   margin-left: 18px;
-    margin-right: 18px;
+  margin-right: 18px;
 }
-article{
+.aboutMypresentation{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
 }
 .main__title{
-  font-size: 22px;
+  font-size: 26px;
   font-family: 'Mulish', sans-serif;
-  width: 120px;
+  width: 142px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
@@ -249,8 +249,17 @@ span::after {
 
 
 /*PORTFOLIO*/
+.portfolioArticle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
 #separtorPortfolio{
   margin: -24px 0 30px;
+}
+.smallText{
+  margin-bottom: 30px;
 }
 
 .section__button{
@@ -288,4 +297,68 @@ span::after {
     width: 120px;
     margin-bottom: 26px;
     text-transform: uppercase;
+}
+
+/*CONTACT*/
+.contactArticle{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-top: 50px;
+}
+.contactMe{
+  width: 174px;
+}
+.form__container {
+  margin-top:30px;
+
+}
+.contactForm{
+    border: 1px solid #CED5D7;
+    border-radius: 6px;
+    padding: 30px 45px 20px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #b9bdbe, 0 0 0 10px #EEF5F7 inset;
+    margin-right: 18px;
+    margin-left: 18px;
+
+}
+.main__label, .inputMessage{
+  font-family: 'Mulish', sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.contactForm label{
+    display: block; 
+  }
+
+  .contactForm input[type='text'], .contacto textarea{
+    padding: 7px 6px;
+    width: 200px; /* una longitud definida */
+    border: 1px solid #CED5D7;
+    resize: none; /* esta propiedad es para que el textarea no sea redimensionable */
+    box-shadow:0 0 0 3px #EEF5F7;
+    margin: 5px 0;
+}
+.contactForm input[type='text']:focus, .contacto textarea:focus{
+    outline: none; /* reset especifico para Chrome/Safari */
+    box-shadow:0 0 0 3px #dde9ec;
+}
+
+.contactForm input[type='submit']{
+    border: none;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    text-shadow: 1px 1px 0px white;
+    cursor: pointer;
+    font-size: 10px;
+    background-color: #f1f1f1;
+    margin-top: 10px;
+}
+.contactForm input[type='submit']:hover{
+   background-color: #ddd;
+}
+.contactForm input[type='submit']:active{
+     background-color: #666;
+ 
 }
