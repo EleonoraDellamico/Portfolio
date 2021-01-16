@@ -107,7 +107,6 @@
 /* MENU HAMBURGUER */
 section{
  /* background-image: url("./img/minimal2.jpg");*/
-  height: 250px;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -332,7 +331,7 @@ span::after {
     display: block; 
   }
 
-  .contactForm input[type='text'], .contacto textarea{
+  .contactForm input[type='text'], .contactForm textarea{
     padding: 7px 6px;
     width: 200px; /* una longitud definida */
     border: 1px solid #CED5D7;
@@ -340,7 +339,7 @@ span::after {
     box-shadow:0 0 0 3px #EEF5F7;
     margin: 5px 0;
 }
-.contactForm input[type='text']:focus, .contacto textarea:focus{
+.contactForm input[type='text']:focus, .contactForm textarea:focus{
     outline: none; /* reset especifico para Chrome/Safari */
     box-shadow:0 0 0 3px #dde9ec;
 }
@@ -361,4 +360,8 @@ span::after {
 .contactForm input[type='submit']:active{
      background-color: #666;
  
+}
+/*FOOTER*/
+.footer__container{
+  margin-top: 356px;
 }
