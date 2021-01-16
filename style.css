@@ -379,12 +379,18 @@ span::after {
  
 }
 /*FOOTER*/
+.footer{
+  border-top: 1px solid #ff2e63;;
+  margin-top: 62px;
+
+}
 .footer__container{
-  margin-top: 30px;
   background-color: black;
   display: flex;
   align-content: center;
   justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .footer__list{
 
