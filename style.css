@@ -380,5 +380,46 @@ span::after {
 }
 /*FOOTER*/
 .footer__container{
-  margin-top: 356px;
+  margin-top: 30px;
+  background-color: black;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.footer__list{
+
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.linkFooter{
+  color: white;
+  text-decoration: none;
+}
+.footerListLink{
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.socialMedia{
+  color: white;
+text-decoration: none;
+}
+
+.imgSocial{
+  width:20px;
+height: 20px;
+}
+.footer__socialMedia{
+  align-self: center;
+}
+.footer__list--socialIcons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    list-style: none;
 }
