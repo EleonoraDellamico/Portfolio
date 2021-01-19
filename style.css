@@ -187,6 +187,33 @@ section{
 .hidden{
   display: none;
 }
+@media all and (min-width:1200px) {
+.css-typing{
+  height: 800px;
+  padding-left: 93px;
+}
+.css-typing p{
+  font-size: 40px;
+  margin-top: 15px;
+}
+.hamburger{
+  margin-right: 30px;
+  margin-top: 30px;
+}
+._layer{
+  width: 42px;
+  height: 6px;
+  margin-bottom: 6px;
+}
+.menuppal{
+  margin-top: 29px;
+  padding: 15px 15px 15px 15px;
+}
+.menuppal ul li {
+  font-size: 15px;
+  margin-top: 9px;
+}
+}
 
 /*MAIN*/
 .main__container{
@@ -245,6 +272,19 @@ span::after {
   font-family: monospace;
   font-size: 12px;
 }
+@media all and (min-width:1200px){
+  .main__title{
+    font-size: 41px;
+    width: 242px;
+  }
+  .main__text{
+    font-size: 20px;
+  }
+  .aboutMypresentation{
+    margin-right: 52px;
+    margin-left: 52px;
+  }
+}
 
 
 /*PORTFOLIO*/
@@ -293,8 +333,11 @@ span::after {
   color: white;
 }
 .show {
-  display: flex;
-  flex-direction: column;
+    display:inline-flex;
+}
+
+.column{
+  overflow: hidden;
 }
 .container__htmlcss, .container__react, .container__javascript{
   position: relative;
@@ -312,7 +355,24 @@ span::after {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+@media all and (min-width:1200px){
+  
+.container__htmlcss, .container__react, .container__javascript{
+  width: 280px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+.column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img{
+  width: 250px;
+  height: 200px;
+}
+}
 
 
 /*CONTACT*/
@@ -378,6 +438,21 @@ span::after {
      background-color: #666;
  
 }
+
+@media all and (min-width:1200px){
+  .contactMe{
+    width: 280px;
+  }
+  .contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__container{
+    width: fit-content;
+    align-self: center;
+  }
+}
 /*FOOTER*/
 footer{
   border-top: 1px solid #ff2e63;;
@@ -428,4 +503,13 @@ height: 20px;
     flex-direction: row;
     margin-top: 10px;
     list-style: none;
+}
+@media all and (min-width:1200px){
+  .imgSocial{
+    width: 29px;
+    height: auto;
+  }
+  .footer__list{
+    font-size: 14px;
+  }
 }

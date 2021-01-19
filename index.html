@@ -71,15 +71,15 @@
 			<div class="separator" id="separtorPortfolio">
 				<span></span>
 			</div>
-			<div class="section__button" id="myHeader">
-				<button class="btn active">All</button>
-				<button class="btn">Html&Css</button>
-				<button class="btn">JS</button>
-				<button class="btn">React</button>
+			<div class="section__button" id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')" >All</button>
+				<button class="btn"onclick="filterSelection('container__htmlcss')"> Html&Css</button>
+				<button class="btn"onclick="filterSelection('container__javascript')"> JS</button>
+				<button class="btn"onclick="filterSelection('container__react')">React</button>
 			</div>
-			<div class="row">
+	
 				<div class="column">
-					<div class="container__htmlcss">
+					<div class="filterDiv container__htmlcss">
 						<a
 							class="linkProyect"
 							title="Cinema"
@@ -94,7 +94,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__htmlcss">
+					<div class="filterDiv container__htmlcss">
 						<a
 							class="linkProyect"
 							title="wave"
@@ -109,7 +109,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__htmlcss">
+					<div class="filterDiv container__htmlcss">
 						<a
 							class="linkProyect"
 							title="new York"
@@ -124,7 +124,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__javascript">
+					<div class=" filterDiv container__javascript">
 						<a
 							class="linkProyect"
 							title="Memory card"
@@ -139,7 +139,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__react">
+					<div class="filterDiv container__react">
 						<a
 							class="linkProyect"
 							title="Rick and Morty"
@@ -154,7 +154,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__react">
+					<div class="filterDiv container__react">
 						<a
 							class="linkProyect"
 							title="pokemon"
@@ -169,7 +169,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__javascript">
+					<div class="filterDiv container__javascript">
 						<a
 							class="linkProyect"
 							target="_blank"
@@ -185,7 +185,7 @@
 							style="width: 100%"
 						/>
 					</div>
-					<div class="container__react">
+					<div class="filterDiv container__react">
 						<a
 							class="linkProyect"
 							title="card visiting"
@@ -200,7 +200,6 @@
 							style="width: 100%"
 						/>
 					</div>
-				</div>
 			</div>
 		</main>
 		<section class="section__contact">
