@@ -334,6 +334,7 @@ span::after {
 }
 .show {
     display:flex;
+    flex-direction: column;
 }
 
 .column{
