@@ -333,7 +333,7 @@ span::after {
   color: white;
 }
 .show {
-    display:inline-flex;
+    display:flex;
 }
 
 .column{
