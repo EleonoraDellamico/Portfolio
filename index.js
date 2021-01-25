@@ -1,55 +1,115 @@
 "use strict";
+const menu = [
+  {
+    id: 1,
+    title: "Landing page",
+    category: "htmlCss",
+    img: "./img/NY.jpg",
+    desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 2,
+    title: "Cinema",
+    category: "htmlCss",
+    img: "./img/Cinema.jpg",
+    desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 3,
+    title: "Marea Coders Web page Html&Css",
+    category: "htmlCss",
+    img: "./img/Sea.jpg",
+    desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 4,
+    title: "Memory Card JavaScript",
+    category: "javascript",
+    img: "./img/MemoryCard.jpg",
+   desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 5,
+    title: "Pokemon React",
+    category: "react",
+    img: "./img/Pokemon.jpg",
+   desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 6,
+    title: " Visiting Card JavaScript",
+    category: "javascript",
+    img: "./img/SuperHeros.jpg",
+    desc: `bla bal bla bla bla bla bla `
+  },
+  {
+    id: 7,
+    title: "Rick&Morty React",
+    category: "react",
+    img: "./img/Rick-Morty.jpg",
+    desc: "bla bla bla bla bla bla "
+  },
+  {
+    id: 8,
+    title: "from JavaScript to React",
+    category: "react",
+    img: "./img/ReactCard.jpg",
+    desc: "bla bla bla bla bla"  
+  }, 
+];
 console.log("eli");
 
 
 function myFunction () {
    let element = document.querySelector(".menuppal");
    element.classList.toggle("hidden");
-}
-filterSelection("all")
-function filterSelection(c) {
-  let x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+};
 
-// Show filtered elements
-function w3AddClass(element, name) {
-  let i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
-    }
-  }
-}
+const sectionCenter= document.querySelector (".section-center");
+const filterBtns = document.querySelectorAll(".filter-btn");
 
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  let i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
 
-// Add active class to the current control button (highlight it)
-let btnContainer = document.getElementById("myBtnContainer");
-let btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    let current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+//LOAD ITEMS
+window.addEventListener("DOMContentLoaded", function (){
+  displayMenuItems(menu);
+});
+function displayMenuItems(menuItems){
+  let displayMenu = menuItems.map
+(function(item){
+    //console.log(item);
+
+    return `<article class="menu-item">
+	<img src=${item.img} class="photo" 
+alt=${item.title} />
+	<div class="item-info">
+		<header>
+			<h4>${item.title}</h4>
+    </header>
+    <p class="item-text">${item.desc} </
+p>
+	</div>
+</article>`;
   });
-}
+  displayMenu = displayMenu.join("");
+sectionCenter.innerHTML = displayMenu;
+};
+
+
+//FILTERES ITEMS
+filterBtns.forEach(function(btn){
+  btn.addEventListener("click", function(e){
+    console.log(e.currentTarget.dataset.id);
+    const category = e.currentTarget.dataset.id;
+    //use filter depending on category 
+    const menuCategory = menu.filter(function (menuItem){
+      if(menuItem.category === category){
+        return menuItem;
+      }
+    });
+    if(category === "all"){
+      displayMenuItems(menu)
+    }else{
+      displayMenuItems(menuCategory);
+    }
+  });
+});

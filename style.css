@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 .css-typing{
- background-image: url("./img/minimal2.jpg");
-  height: 250px;
+ background-color: black;
+  height:174px;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@
   font-size: 14px;
   white-space: nowrap; /* The white-space property specifies how white-space inside an element is handled */
   overflow: hidden;
+  color: white;
 }
 .css-typing p:nth-child(1) {
   width: 7.3em;
@@ -133,7 +134,7 @@ section{
 	user-select:none
 }
 ._layer{
-	background: black;
+	background: white;
 	margin-bottom:4px;
 	border-radius:2px;
   width: 23px;
@@ -217,57 +218,31 @@ section{
 
 /*MAIN*/
 .main__container{
-  margin-left: 18px;
-  margin-right: 18px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .aboutMypresentation{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  margin: 15px 15px 15px 15px;
 }
 .main__title{
-  font-size: 26px;
+  font-size: 22px;
   font-family: 'Mulish', sans-serif;
-  width: 142px;
+  width: 180px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.separator {
-  position: relative;
+.img__aboutMe{
+  width: 274px;
+}
+.me{
   width: 100%;
-  margin: -10px 0 30px;
-  height: 5px;
-  display: block;
-  text-align: center;
-}
-.separator span {
-  display: block;
-  position: relative;
-  width: 5px;
-  height: 5px;
-  background: #ff2e63;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-span::before, span::after{
-  content: "";
-  vertical-align: top;
-  border-bottom: 1px solid black;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  right: 9pt;
-  height: 2px;
-  width: 28px;
 }
 
-span::after {
-  left: 9pt;
-  right: inherit;
-}
-
-.main__text{
+.item-text{
   color: black;
   font-family: monospace;
   font-size: 12px;
@@ -277,7 +252,7 @@ span::after {
     font-size: 41px;
     width: 242px;
   }
-  .main__text{
+  .item-text{
     font-size: 20px;
   }
   .aboutMypresentation{
@@ -288,92 +263,74 @@ span::after {
 
 
 /*PORTFOLIO*/
-
-.main__title .portfolio{
-    font-size: 22px;
-    font-family: 'Mulish', sans-serif;
-    width: 120px;
-    margin-bottom: 26px;
-    text-transform: uppercase;
-}
-
-.portfolioArticle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-#separtorPortfolio{
-  margin: -24px 0 30px;
-}
-.smallText{
-  margin-bottom: 30px;
-}
-
-.section__button{
+.title{
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
-.btn{
-  border: none;
-  outline: none;
-  padding: 10px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  font-size: 18px;
-  margin-right: 5px;
-  margin-bottom: 10px;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-.show {
-    display:flex;
-    flex-direction: column;
-}
-
-.column{
-  overflow: hidden;
-}
-.container__htmlcss, .container__react, .container__javascript{
-  position: relative;
-}
-
-.linkProyect{
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  color: black;
-  background-color: #f1f1f1;
-  padding: 3px 3px 3px 3px;
-  font-family: monospace;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-@media all and (min-width:1200px){
-  
-.container__htmlcss, .container__react, .container__javascript{
-  width: 280px;
-  height: 200px;
-  margin-bottom: 20px;
-  margin-right: 10px;
-}
-.column{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-img{
+.photo{
   width: 250px;
-  height: 200px;
+  height: auto;
 }
+.btn-container{
+  display: flex;
+  justify-content: center;
 }
+
+.filter-btn{
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+  padding: 0.375rem 0.75rem;
+  display: inline-block;
+  font-size: 0.875rem;
+  border:black;
+  cursor: pointer;
+  box-shadow: 0 6px 7px black;;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 5px;
+}
+.filter-btn:hover {
+  color: white;
+  background: black;
+  opacity: 0.6;  ;
+}
+
+
+.section-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*CONTACT*/
