@@ -49,7 +49,6 @@
   animation-delay: 4s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  background-color: black;
   color: white;
 }
 
@@ -146,11 +145,15 @@ section{
 }
 
 .hamburger:hover .-top{
-  transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
+  /* transform: translateY(10px)rotate3d(1, 1, 1, 57deg); media queries*/
+  transform:translateY(5px)rotate3d(1, 1, 15, 57deg);
 }
 
 .hamburger:hover .-mid{
-transform: translateY(-2px)rotate3d(33, -39, -38, 57deg);
+/* transform: translateY(-2px)rotate3d(33, -39, -38, 57deg); media queries*/
+transform: translateY(-2px)rotate3d(-4, -39, -106, 57deg);
+
+
 }
 .hamburger:hover .-bottom{
 opacity:0;
