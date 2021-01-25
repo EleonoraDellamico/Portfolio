@@ -19,7 +19,7 @@ const menu = [
     title: "Marea Coders Web Html&Css",
     category: "htmlCss",
     img: "./img/Sea.jpg",
-    a: `https://github.com/martreyz/project-promo-k-module-1-team-7 `
+    a: `https://martreyz.github.io/project-promo-k-module-1-team-7/ `
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const menu = [
     title: " Visiting Card JavaScript",
     category: "javascript",
     img: "./img/Superheros.jpg",
-    a: "https://github.com/martreyz/project-promo-k-module-3-team-4" 
+    a: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/" 
   },
   {
     id: 7,
