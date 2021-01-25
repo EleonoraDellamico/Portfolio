@@ -236,9 +236,7 @@ section{
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.img__aboutMe{
-  width: 274px;
-}
+
 .me{
   width: 100%;
 }
@@ -251,14 +249,23 @@ section{
 @media all and (min-width:1200px){
   .main__title{
     font-size: 41px;
-    width: 242px;
+    width: 285px;
   }
   .item-text{
     font-size: 20px;
   }
-  .aboutMypresentation{
-    margin-right: 52px;
-    margin-left: 52px;
+  .container__presentation{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+  }
+  .img__aboutMe{
+    width: 600px;
+  }
+  .me{
+    width: 600px;
   }
 }
 
@@ -276,6 +283,7 @@ section{
 .photo{
   width: 250px;
   height: auto;
+  margin-bottom: 13px;
 }
 .btn-container{
   display: flex;
@@ -329,8 +337,22 @@ h4, a{
    background-color: moccasin;
   cursor: pointer;
  }
-
-
+@media all and (min-width:1200px){
+.section-center{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo{
+  width: 290px;
+  height: 221px;
+}
+.menu-item{
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+}
 
 
 
@@ -425,10 +447,14 @@ h4, a{
     align-items: center;
   }
   .form__container{
-    width: fit-content;
+    width: 540px;
     align-self: center;
   }
+  }
+.main__label, .inputMessage{
+  font-size: 13px;
 }
+
 /*FOOTER*/
 footer{
   border-top: 1px solid #ff2e63;;
@@ -482,10 +508,10 @@ height: 20px;
 }
 @media all and (min-width:1200px){
   .imgSocial{
-    width: 29px;
+    width: 35px;
     height: auto;
   }
   .footer__list{
-    font-size: 14px;
+    font-size: 16px;
   }
 }
