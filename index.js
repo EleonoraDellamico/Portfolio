@@ -39,7 +39,7 @@ const menu = [
     id: 6,
     title: " Visiting Card JavaScript",
     category: "javascript",
-    img: "./img/SuperHeros.jpg",
+    img: "./img/Superheros.jpg",
     desc: `bla bal bla bla bla bla bla `
   },
   {
