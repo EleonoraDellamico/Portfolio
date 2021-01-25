@@ -142,20 +142,20 @@ section{
   opacity:1;
   -webkit-transform:translate3d(0, 0, 0);
 	transform:translate3d(0, 0, 0);
-	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
 }
 
 .hamburger:hover .-top{
-	-webkit-transform:translateY(-100%);
-	-ms-transform:translateY(-100%);
-	transform:translateY(-100%);
+  transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
+}
+
+.hamburger:hover .-mid{
+transform: translateY(-2px)rotate3d(33, -39, -38, 57deg);
 }
 .hamburger:hover .-bottom{
-	-webkit-transform:translateY(100%);
-	-ms-transform:translateY(100%);
-	transform:translateY(100%);
-	}
+opacity:0;
+}
+
 .menuppal{
   position: fixed;
   top: 50px;
