@@ -219,8 +219,10 @@ section{
 /*MAIN*/
 .main__container{
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: beige;
+
 }
 .aboutMypresentation{
   display: flex;
