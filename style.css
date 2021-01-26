@@ -307,6 +307,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   }
   .aboutMypresentation{
     margin-top:120px;
+    text-align: justify;
   }
   .container__presentation{
     display: flex;
