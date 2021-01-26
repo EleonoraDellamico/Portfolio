@@ -191,6 +191,32 @@ opacity:0;
 .hidden{
   display: none;
 }
+/*MEDIA QUERIES IPAD*/
+
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .css-typing{
+    height: 280px;
+    padding-left: 33px;
+  }
+  .css-typing p{
+    font-size: 26px;
+  }
+  .hamburger{
+    width: 52px;
+  }
+  ._layer{
+    width: 100%;
+    height: 5px;
+    margin-bottom: 7px;
+  }
+.hamburger:hover .-top{
+      transform: translateY(10px)rotate3d(1, 1, 32, 57deg)
+}
+
+}
+
+/*MEDIA QUERIES PC*/
+
 @media all and (min-width:1200px) {
 .css-typing{
   height: 800px;
@@ -208,6 +234,12 @@ opacity:0;
   width: 42px;
   height: 6px;
   margin-bottom: 6px;
+}
+.hamburger:hover .-top{
+transform: translateY(10px)rotate3d(1, 1, 1, 57deg); 
+}
+.hamburger:hover .-mid{
+  transform: translateY(-2px)rotate3d(33, -39, -38, 57deg);
 }
 .menuppal{
   margin-top: 29px;
@@ -229,7 +261,6 @@ opacity:0;
 .aboutMypresentation{
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 15px 15px 15px 15px;
 }
 .main__title{
@@ -249,6 +280,23 @@ opacity:0;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
+/*MEDIA QUERIES IPAD*/
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+.item-text{
+  font-size: 22px;
+}
+.aboutMypresentation{
+  margin: 25px 25px 25px 25px;
+}
+.main__title{
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+}
+
+
+/*MEDIA QUERIES PC*/
+
 @media all and (min-width:1200px){
   .main__title{
     font-size: 41px;
@@ -256,6 +304,9 @@ opacity:0;
   }
   .item-text{
     font-size: 20px;
+  }
+  .aboutMypresentation{
+    margin-top:120px;
   }
   .container__presentation{
     display: flex;
@@ -329,17 +380,48 @@ opacity:0;
   border: 1px solid moccasin;
 }
 
-/*Description*/
-
+/*CARD'S DESCRIPTION*/
 h4, a{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
- .link__proyect{
+ .link__project{
    text-decoration: none;
    background-color: moccasin;
   cursor: pointer;
  }
+ .item-info{
+   display: flex;
+ }
+ .linkIcon{
+   width: 20px;
+   height: auto;
+   margin-left: 6px;
+ }
+
+ /*MEDIAQUERIES IPAD*/
+ @media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+.filter-btn{
+  margin-top: 0;
+  font-size: large;
+  margin-right: 10px;
+}
+.section-center{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.photo{
+  width: 290px;
+  height: 221px;
+}
+.menu-item{
+  margin-right: 15px;
+}
+
+ }
+ /*MEDIA QUERIES PC*/
 @media all and (min-width:1200px){
 .section-center{
   display: flex;
@@ -356,25 +438,6 @@ h4, a{
   margin-bottom: 50px;
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*CONTACT*/
@@ -399,8 +462,12 @@ h4, a{
     box-shadow: 0px 5px 10px #b9bdbe, 0 0 0 10px #EEF5F7 inset;
     margin-right: 18px;
     margin-left: 18px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 .main__label, .inputMessage{
   font-family: 'Mulish', sans-serif;
   text-transform: uppercase;
@@ -439,7 +506,17 @@ h4, a{
      background-color: #666;
  
 }
+/*MEDIAQUERIES IPAD*/
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+.section__contact{
+  display: flex;
+  align-items: center;
+}
+}
 
+
+
+/*MEDIA QUERIES PC*/
 @media all and (min-width:1200px){
   .contactMe{
     width: 280px;
@@ -509,12 +586,33 @@ height: 20px;
     margin-top: 10px;
     list-style: none;
 }
-@media all and (min-width:1200px){
+
+
+/*MEDIA QUERIES IPAD*/
+@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1){
+  .footerListLink{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
   .imgSocial{
-    width: 35px;
+    width: 39px;
     height: auto;
-  }
-  .footer__list{
-    font-size: 16px;
-  }
+    margin-right: 10px;
+}
+}
+
+
+
+
+/*MEDIA QUERIES PC*/
+@media all and (min-width:1200px){
+  .footerListLink{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.imgSocial{
+  width: 39px;
+  height: auto;
+  margin-right: 10px;
+}
 }

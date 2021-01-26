@@ -5,6 +5,7 @@ const menu = [
     title: "Landing page",
     category: "htmlCss",
     img: "./img/NY.jpg",
+    link:"./img/Link.png",
     a: `http://beta.adalab.es/modulo-1-evaluacion-final-EleonoraDellamico/ `
   },
   {
@@ -12,6 +13,7 @@ const menu = [
     title: "Cinema",
     category: "htmlCss",
     img: "./img/Cinema.jpg",
+    link:"./img/Link.png"
     
   },
   {
@@ -19,6 +21,7 @@ const menu = [
     title: "Marea Coders Web Html&Css",
     category: "htmlCss",
     img: "./img/Sea.jpg",
+    link:"./img/Link.png",
     a: `https://martreyz.github.io/project-promo-k-module-1-team-7/ `
   },
   {
@@ -26,6 +29,7 @@ const menu = [
     title: "Memory Card JavaScript",
     category: "javascript",
     img: "./img/MemoryCard.jpg",
+    link:"./img/Link.png",
     a: "https://eleonoradellamico.github.io/LearnJavaScrip_MemoryGame/"
   },
   {
@@ -33,6 +37,7 @@ const menu = [
     title: "Pokemon React",
     category: "react",
     img: "./img/Pokemon.jpg",
+    link:"./img/Link.png",
    a: `http://beta.adalab.es/modulo-3-evaluacion-intermedia-EleonoraDellamico/`
   },
   {
@@ -40,6 +45,7 @@ const menu = [
     title: " Visiting Card JavaScript",
     category: "javascript",
     img: "./img/Superheros.jpg",
+    link:"./img/Link.png",
     a: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/" 
   },
   {
@@ -47,6 +53,7 @@ const menu = [
     title: "Rick&Morty React",
     category: "react",
     img: "./img/Rick-Morty.jpg",
+    link:"./img/Link.png",
     a: "http://beta.adalab.es/modulo-3-evaluacion-final-EleonoraDellamico/#/"
   },
   {
@@ -54,6 +61,7 @@ const menu = [
     title: "from JavaScript to React",
     category: "react",
     img: "./img/ReactCard.jpg",
+    link:"./img/Link.png",
     a: "http://beta.adalab.es/project-promo-K-module-02-team-05/"  
   }, 
 ];
@@ -85,8 +93,7 @@ alt=${item.title} />
 		<header>
 			<h4>${item.title}</h4>
     </header>
-    
-<a href="${item.a}" target="_blank"> See the project</a>
+    <a title="${item.title}"href="${item.a}" target="_blank"><img class="linkIcon" src="${item.link}" alt="link"/></a>
 	</div>
 </article>`;
   });
