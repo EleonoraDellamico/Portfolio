@@ -18,7 +18,7 @@ const menu = [
   },
   {
     id: 3,
-    title: "Marea Coders Web Html&Css",
+    title: "Marea Coders Html&Css",
     category: "htmlCss",
     img: "./img/Sea.jpg",
     link:"./img/Link.png",
