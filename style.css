@@ -262,6 +262,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   display: flex;
   flex-direction: column;
   margin: 15px 15px 15px 15px;
+  text-align: justify;
 }
 .main__title{
   font-size: 22px;
@@ -287,6 +288,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
 }
 .aboutMypresentation{
   margin: 25px 25px 25px 25px;
+  text-align: justify;
 }
 .main__title{
   font-size: 25px;
