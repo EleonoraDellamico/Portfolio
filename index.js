@@ -1,19 +1,24 @@
 "use strict";
-const menu = [
+const list = [
   {
     id: 1,
     title: "Landing page",
     category: "htmlCss",
     img: "./img/NY.jpg",
-    link:"./img/Link.png",
-    a: `http://beta.adalab.es/modulo-1-evaluacion-final-EleonoraDellamico/ `
+    imgLink:"./img/Link.png",
+    linkPage: `http://beta.adalab.es/modulo-1-evaluacion-final-EleonoraDellamico/ `,
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/EleonoraDellamico/modulo-1-evaluacion-final-EleonoraDellamico"
   },
   {
     id: 2,
     title: "Cinema",
     category: "htmlCss",
     img: "./img/Cinema.jpg",
-    link:"./img/Link.png"
+    imgLink:"./img/Link.png",
+    linkPage:"https://eleonoradellamico.github.io/Cinema/",
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/EleonoraDellamico/Cinema"
     
   },
   {
@@ -21,54 +26,66 @@ const menu = [
     title: "Marea Coders Html&Css",
     category: "htmlCss",
     img: "./img/Sea.jpg",
-    link:"./img/Link.png",
-    a: `https://martreyz.github.io/project-promo-k-module-1-team-7/ `
+    imgLink:"./img/Link.png",
+    linkPage: `https://martreyz.github.io/project-promo-k-module-1-team-7/ `,
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/martreyz/project-promo-k-module-1-team-7"
   },
   {
     id: 4,
     title: "Memory Card JavaScript",
     category: "javascript",
     img: "./img/MemoryCard.jpg",
-    link:"./img/Link.png",
-    a: "https://eleonoradellamico.github.io/LearnJavaScrip_MemoryGame/"
+    imgLink:"./img/Link.png",
+    linkPage: "https://eleonoradellamico.github.io/LearnJavaScrip_MemoryGame/",
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/EleonoraDellamico/LearnJavaScrip_MemoryGame"
   },
   {
     id: 5,
     title: "Pokemon React",
     category: "react",
     img: "./img/Pokemon.jpg",
-    link:"./img/Link.png",
-   a: `http://beta.adalab.es/modulo-3-evaluacion-intermedia-EleonoraDellamico/`
+    imgLink:"./img/Link.png",
+   linkPage: `http://beta.adalab.es/modulo-3-evaluacion-intermedia-EleonoraDellamico/`,
+   imgGit:"./img/gitIcon.png",
+   linkGitHub:"https://github.com/EleonoraDellamico/modulo-3-evaluacion-intermedia-EleonoraDellamico"
   },
   {
     id: 6,
     title: " Visiting Card JavaScript",
     category: "javascript",
     img: "./img/Superheros.jpg",
-    link:"./img/Link.png",
-    a: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/" 
+    imgLink:"./img/Link.png",
+    linkPage: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/",
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/EleonoraDellamico/project-promo-K-module-02-team-05"
   },
   {
     id: 7,
     title: "Rick&Morty React",
     category: "react",
     img: "./img/Rick-Morty.jpg",
-    link:"./img/Link.png",
-    a: "http://beta.adalab.es/modulo-3-evaluacion-final-EleonoraDellamico/#/"
+    imgLink:"./img/Link.png",
+    linkPage: "http://beta.adalab.es/modulo-3-evaluacion-final-EleonoraDellamico/#/",
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/EleonoraDellamico/modulo-3-evaluacion-final-EleonoraDellamico"
   },
   {
     id: 8,
     title: "from JavaScript to React",
     category: "react",
     img: "./img/ReactCard.jpg",
-    link:"./img/Link.png",
-    a: "http://beta.adalab.es/project-promo-K-module-02-team-05/"  
+    imgLink:"./img/Link.png",
+    linkPage: "http://beta.adalab.es/project-promo-K-module-02-team-05/",
+    imgGit:"./img/gitIcon.png",
+    linkGitHub:"https://github.com/martreyz/project-promo-k-module-3-team-4"
   }, 
 ];
-console.log("eli");
 
 
-function myFunction () {
+
+function toggleMenu() {
    let element = document.querySelector(".menuppal");
    element.classList.toggle("hidden");
 };
@@ -79,10 +96,10 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 
 //LOAD ITEMS
 window.addEventListener("DOMContentLoaded", function (){
-  displayMenuItems(menu);
+  displayListItems(list);
 });
-function displayMenuItems(menuItems){
-  let displayMenu = menuItems.map
+function displayListItems(listItems){
+  let displayList = listItems.map
 (function(item){
     //console.log(item);
 
@@ -93,12 +110,13 @@ alt=${item.title} />
 		<header>
 			<h4>${item.title}</h4>
     </header>
-    <a title="${item.title}"href="${item.a}" target="_blank"><img class="linkIcon" src="${item.link}" alt="link"/></a>
+    <a title="${item.title}"href="${item.linkPage}" target="_blank"><img class="linkIcon" src="${item.imgLink}" alt="link"/></a>
+    <a title="${item.title}"href="${item.linkGitHub}" target="_blank"><img class="linkIcon" src="${item.imgGit}" alt="link"/></a>
 	</div>
 </article>`;
   });
-  displayMenu = displayMenu.join("");
-sectionCenter.innerHTML = displayMenu;
+  displayList = displayList.join("");
+sectionCenter.innerHTML = displayList;
 };
 
 
@@ -108,15 +126,15 @@ filterBtns.forEach(function(btn){
     console.log(e.currentTarget.dataset.id);
     const category = e.currentTarget.dataset.id;
     //use filter depending on category 
-    const menuCategory = menu.filter(function (menuItem){
-      if(menuItem.category === category){
-        return menuItem;
+    const listCategory = list.filter(function (listItem){
+      if(listItem.category === category){
+        return listItem;
       }
     });
     if(category === "all"){
-      displayMenuItems(menu)
+      displayListItems(list)
     }else{
-      displayMenuItems(menuCategory);
+      displayListItems(listCategory);
     }
   });
 });

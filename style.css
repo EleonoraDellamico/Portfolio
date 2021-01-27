@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 .css-typing{
  background-color: black;
   height:174px;
@@ -272,7 +275,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   text-transform: uppercase;
 }
 
-.me{
+.imgSectionAboutMe{
   width: 100%;
 }
 
@@ -321,7 +324,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   .img__aboutMe{
     width: 600px;
   }
-  .me{
+  .imgSectionAboutMe{
     width: 600px;
   }
 }
@@ -400,6 +403,11 @@ h4, a{
    width: 20px;
    height: auto;
    margin-left: 6px;
+ }
+ .gitIcon{
+   width: 20px;
+height: auto;
+margin-right: 6px;
  }
 
  /*MEDIAQUERIES IPAD*/
