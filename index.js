@@ -6,9 +6,9 @@ const list = [
     category: "htmlCss",
     img: "./img/NY.jpg",
     imgLink:"./img/Link.png",
-    linkPage: `http://beta.adalab.es/modulo-1-evaluacion-final-EleonoraDellamico/ `,
+    linkPage: `https://eleonoradellamico.github.io/LandingPage/`,
     imgGit:"./img/gitIcon.png",
-    linkGitHub:"https://github.com/EleonoraDellamico/modulo-1-evaluacion-final-EleonoraDellamico"
+    linkGitHub:"https://github.com/EleonoraDellamico/LandingPage"
   },
   {
     id: 2,
@@ -47,9 +47,9 @@ const list = [
     category: "react",
     img: "./img/Pokemon.jpg",
     imgLink:"./img/Link.png",
-   linkPage: `http://beta.adalab.es/modulo-3-evaluacion-intermedia-EleonoraDellamico/`,
+   linkPage: `https://eleonoradellamico.github.io/Pokemon__REACT/`,
    imgGit:"./img/gitIcon.png",
-   linkGitHub:"https://github.com/EleonoraDellamico/modulo-3-evaluacion-intermedia-EleonoraDellamico"
+   linkGitHub:"https://github.com/EleonoraDellamico/Pokemon__REACT"
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const list = [
     category: "javascript",
     img: "./img/Superheros.jpg",
     imgLink:"./img/Link.png",
-    linkPage: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/",
+    linkPage: "http://beta.adalab.es/project-promo-K-module-02-team-05/",
     imgGit:"./img/gitIcon.png",
     linkGitHub:"https://github.com/EleonoraDellamico/project-promo-K-module-02-team-05"
   },
@@ -67,9 +67,9 @@ const list = [
     category: "react",
     img: "./img/Rick-Morty.jpg",
     imgLink:"./img/Link.png",
-    linkPage: "http://beta.adalab.es/modulo-3-evaluacion-final-EleonoraDellamico/#/",
+    linkPage: "https://eleonoradellamico.github.io/Rick_Morty_React/#/",
     imgGit:"./img/gitIcon.png",
-    linkGitHub:"https://github.com/EleonoraDellamico/modulo-3-evaluacion-final-EleonoraDellamico"
+    linkGitHub:"https://github.com/EleonoraDellamico/Rick_Morty_React"
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ const list = [
     category: "react",
     img: "./img/ReactCard.jpg",
     imgLink:"./img/Link.png",
-    linkPage: "http://beta.adalab.es/project-promo-K-module-02-team-05/",
+    linkPage: "https://martreyz.github.io/project-promo-k-module-3-team-4/#/",
     imgGit:"./img/gitIcon.png",
     linkGitHub:"https://github.com/martreyz/project-promo-k-module-3-team-4"
   }, 
