@@ -108,8 +108,8 @@ html{
 }
 
 /* MENU HAMBURGUER */
-section{
- /* background-image: url("./img/minimal2.jpg");*/
+ /*  section{
+  background-image: url("./img/minimal2.jpg");
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -148,12 +148,12 @@ section{
 }
 
 .hamburger:hover .-top{
-  /* transform: translateY(10px)rotate3d(1, 1, 1, 57deg); media queries*/
+
   transform:translateY(5px)rotate3d(1, 1, 15, 57deg);
 }
 
 .hamburger:hover .-mid{
-/* transform: translateY(-2px)rotate3d(33, -39, -38, 57deg); media queries*/
+
 transform: translateY(-2px)rotate3d(-4, -39, -106, 57deg);
 
 
@@ -193,7 +193,107 @@ opacity:0;
 }
 .hidden{
   display: none;
+}   */
+label .menuHamburger {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width:40px;
+    height: 40px;
+    z-index: 100;
+    background-color: hsl(237, 63%, 64%);
+    border-radius: 50% 50% 50% 50%;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+    cursor: pointer;
 }
+
+label .hamburger {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    width: 21px;
+    height: 2px;
+    background: #FFF;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+
+label .hamburger:before {
+    top: -7px;
+}
+
+label .hamburger:after {
+    bottom: -7px;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked+.menuHamburger {
+    box-shadow: 0 0 0 20vw hsl(237, 63%, 64%), 0 0 0 20vh;
+    border-radius: 50%;
+}
+
+label input:checked+.menuHamburger .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+label input:checked+.menuHamburger .hamburger:after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+label input:checked+.menuHamburger .hamburger:before {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    top: 0;
+}
+
+label input:checked+.menuHamburger+ul {
+    opacity: 1;
+}
+
+label ul {
+    z-index: 200;
+    position: absolute;
+    top:9%;
+    right: -4%;
+    -webkit-transform: translate(-20%, -20%);
+    transform: translate(-20%, -20%);
+    opacity: 0;
+    -webkit-transition: .25s 0s ease-in-out;
+    transition: .25s 0s ease-in-out;
+    font-size: 12px;
+    list-style: none;
+}
+
+label a {
+    margin-bottom: 1em;
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+}
+
+
 /*MEDIA QUERIES IPAD*/
 
 @media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
