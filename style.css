@@ -249,7 +249,7 @@ label input {
 }
 
 label input:checked+.menuHamburger {
-      box-shadow: 30px -1px 2px 33vw hsl(49deg 94% 93%), 0 0 0 13vh;
+    box-shadow: 30px -15px 2px 33vw hsl(49deg 94% 93%), 0 0 0 13vh;
     border-radius: 50%;
 }
 
@@ -277,7 +277,7 @@ label input:checked+.menuHamburger+ul {
 label ul {
     z-index: 200;
     position: absolute;
-    top:9%;
+    top:11%;
     right: -1%;
     -webkit-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
@@ -289,16 +289,20 @@ label ul {
 }
 
 label a {
-    margin-bottom: 1em;
+    margin-bottom: 4px;
     display: block;
     color: black;
     text-decoration: none;
 }
+.label ul li a:hover{
+  text-decoration:none;
+  opacity: 1;
+  color: #ff2e63;
+}
 
+/* /*MEDIA QUERIES IPAD*/
 
-/*MEDIA QUERIES IPAD*/
-
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
+/*@media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) {
   .css-typing{
     height: 380px;
     padding-left: 33px;
@@ -306,23 +310,18 @@ label a {
   .css-typing p{
     font-size: 30px;
   }
-  .hamburger{
-    width: 52px;
+  label ul{
+    top:12%;
+    font-size:19px;
   }
-  ._layer{
-    width: 100%;
-    height: 5px;
-    margin-bottom: 7px;
+  label a{
+    margin-bottom: 12px;
   }
-.hamburger:hover .-top{
-      transform: translateY(10px)rotate3d(1, 1, 32, 57deg)
-}
-
 }
 
 /*MEDIA QUERIES PC*/
 
-@media all and (min-width:1200px) {
+/*@media all and (min-width:1200px) and (max-device-width: 1400px) {
 .css-typing{
   height: 800px;
   padding-left: 93px;
@@ -331,30 +330,37 @@ label a {
   font-size: 40px;
   margin-top: 15px;
 }
-.hamburger{
-  margin-right: 30px;
-  margin-top: 30px;
+label ul{
+    top:17%;
+    right: 7%;
+    font-size:27px;
+  }
+  label a{
+    margin-bottom: 18px;
+  }
+  label input:checked+.menuHamburger {
+    box-shadow: 30px -15px 2px 31vw hsl(49deg 94% 93%), 0 0 0 13vh;
+  }
+@media all and (min-width:1395px) and (max-device-width: 1450px) {
+  .css-typing{
+  height: 800px;
+  padding-left: 93px;
 }
-._layer{
-  width: 42px;
-  height: 6px;
-  margin-bottom: 6px;
+.css-typing p{
+  font-size: 40px;
+  margin-top: 15px;
 }
-.hamburger:hover .-top{
-transform: translateY(10px)rotate3d(1, 1, 1, 57deg); 
+label ul{
+    top:17%;
+    right: 7%;
+    font-size:27px;
+  }
+  label a{
+    margin-bottom: 18px;
+  }
+
 }
-.hamburger:hover .-mid{
-  transform: translateY(-2px)rotate3d(33, -39, -38, 57deg);
-}
-.menuppal{
-  margin-top: 29px;
-  padding: 15px 15px 15px 15px;
-}
-.menuppal ul li {
-  font-size: 15px;
-  margin-top: 9px;
-}
-}
+ */
 
 /*MAIN*/
 .main__container{
@@ -387,7 +393,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   font-size: 16px;
 }
 /*MEDIA QUERIES IPAD*/
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px)  and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 .item-text{
   font-size: 22px;
 }
@@ -400,11 +406,11 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   margin-bottom: 30px;
 }
 }
-
+ */
 
 /*MEDIA QUERIES PC*/
 
-@media all and (min-width:1200px){
+/* @media all and (min-width:1200px){
   .main__title{
     font-size: 41px;
     width: 285px;
@@ -429,7 +435,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   .imgSectionAboutMe{
     width: 600px;
   }
-}
+} */
 
 
 /*PORTFOLIO*/
@@ -441,6 +447,7 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   display: flex;
   justify-content: center;
   margin-top: 60px;
+  padding-top: 20px;
 }
 .photo{
   width: 250px;
@@ -486,6 +493,10 @@ transform: translateY(10px)rotate3d(1, 1, 1, 57deg);
   padding: 10px 10px 10px 10px;
   margin-bottom: 10px;
   border: 1px solid moccasin;
+  width: 291px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*CARD'S DESCRIPTION*/
@@ -512,16 +523,16 @@ height: auto;
 margin-right: 6px;
  }
 /*MEDAIQUERIES PHONE TO IPAD*/
-@media screen and (device-width: 600px) and (device-height: 767px) {
+/* @media screen and (device-width: 600px) and (device-height: 767px) {
 .section-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-}
+} */
 
  /*MEDIAQUERIES IPAD*/
- @media only screen and (min-device-width: 600px)  and (max-device-width: 1400px){
+ /* @media only screen and (min-device-width: 600px)  and (max-device-width: 1400px){
 .filter-btn{
   margin-top: 0;
   font-size: large;
@@ -541,9 +552,9 @@ margin-right: 6px;
   margin-right: 15px;
 }
 
- }
+ } */
  /*MEDIA QUERIES PC*/
-@media all and (min-width:1200px){
+/* @media all and (min-width:1200px){
 .section-center{
   display: flex;
     flex-direction: row;
@@ -559,7 +570,7 @@ margin-right: 6px;
   margin-bottom: 50px;
 }
 }
-
+ */
 
 /*CONTACT*/
 .contactArticle{
@@ -628,17 +639,18 @@ margin-right: 6px;
  
 }
 /*MEDIAQUERIES IPAD*/
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
+/* @media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
 .section__contact{
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
-}
+} */
 
 
 
 /*MEDIA QUERIES PC*/
-@media all and (min-width:1200px){
+/* @media all and (min-width:1200px){
   .contactMe{
     width: 280px;
   }
@@ -655,7 +667,7 @@ margin-right: 6px;
 .main__label, .inputMessage{
   font-size: 13px;
 }
-
+ */
 /*FOOTER*/
 footer{
   border-top: 1px solid #ff2e63;;
@@ -710,7 +722,7 @@ height: 20px;
 
 
 /*MEDIA QUERIES IPAD*/
-@media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
+/* @media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
   .footerListLink{
     font-size: 20px;
     margin-bottom: 15px;
@@ -720,13 +732,13 @@ height: 20px;
     height: auto;
     margin-right: 10px;
 }
-}
+} */
 
 
 
 
 /*MEDIA QUERIES PC*/
-@media all and (min-width:1200px){
+/* @media all and (min-width:1200px){
   .footerListLink{
   font-size: 20px;
   margin-bottom: 15px;
@@ -736,4 +748,4 @@ height: 20px;
   height: auto;
   margin-right: 10px;
 }
-}
+} */

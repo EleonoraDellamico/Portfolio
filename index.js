@@ -85,10 +85,10 @@ const list = [
 
 
 
-function toggleMenu() {
-   let element = document.querySelector(".menuppal");
-   element.classList.toggle("hidden");
-};
+// function toggleMenu() {
+//    let element = document.querySelector(".menuppal");
+//    element.classList.toggle("hidden");
+// };
 
 const sectionCenter= document.querySelector (".section-center");
 const filterBtns = document.querySelectorAll(".filter-btn");
