@@ -53,6 +53,7 @@ html{
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   color: white;
+  z-index: 200;
 }
 
 @keyframes type {
@@ -201,7 +202,7 @@ label .menuHamburger {
     width:40px;
     height: 40px;
     z-index: 100;
-    background-color: hsl(237, 63%, 64%);
+    background-color: cornsilk;
     border-radius: 50% 50% 50% 50%;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -215,12 +216,13 @@ label .hamburger {
     left: 10px;
     width: 21px;
     height: 2px;
-    background: #FFF;
+    background: black;
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
+    
 }
 
 label .hamburger:after, label .hamburger:before {
@@ -231,7 +233,7 @@ label .hamburger:after, label .hamburger:before {
     display: block;
     width: 100%;
     height: 100%;
-    background: #FFF;
+    background: black;
 }
 
 label .hamburger:before {
@@ -247,7 +249,7 @@ label input {
 }
 
 label input:checked+.menuHamburger {
-    box-shadow: 0 0 0 20vw hsl(237, 63%, 64%), 0 0 0 20vh;
+      box-shadow: 30px -1px 2px 33vw hsl(49deg 94% 93%), 0 0 0 13vh;
     border-radius: 50%;
 }
 
@@ -276,7 +278,7 @@ label ul {
     z-index: 200;
     position: absolute;
     top:9%;
-    right: -4%;
+    right: -1%;
     -webkit-transform: translate(-20%, -20%);
     transform: translate(-20%, -20%);
     opacity: 0;
@@ -289,7 +291,7 @@ label ul {
 label a {
     margin-bottom: 1em;
     display: block;
-    color: #FFF;
+    color: black;
     text-decoration: none;
 }
 
