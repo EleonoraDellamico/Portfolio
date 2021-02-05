@@ -268,7 +268,9 @@ label ul{
   }
   label a{
     margin-bottom: 32px;
+    font-size: 20px;
   }
+}
   
 
 
@@ -319,7 +321,7 @@ label ul{
 
 /*MEDIA QUERIES PC*/
 
-/* @media all and (min-width:1200px){
+@media all and (min-width:1200px){
   .main__title{
     font-size: 41px;
     width: 285px;
@@ -328,7 +330,7 @@ label ul{
     font-size: 20px;
   }
   .aboutMypresentation{
-    margin-top:120px;
+    margin-top:65px;
     text-align: justify;
   }
   .container__presentation{
@@ -344,7 +346,7 @@ label ul{
   .imgSectionAboutMe{
     width: 600px;
   }
-} */
+} 
 
 /*PORTFOLIO*/
 .menu {
@@ -408,9 +410,8 @@ label ul{
 	justify-content: center;
 }
 
-/*CARD'S DESCRIPTION*/
-h4,
-a {
+/*CARD*/
+h4, a {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	font-size: small;
@@ -433,7 +434,8 @@ a {
 	height: auto;
 	margin-right: 6px;
 }
-/*MEDAIQUERIES PHONE TO IPAD*/
+
+/*MEDAIQUERIES  IPAD*/
 @media all and (device-width: 768px) {
 	.section-center {
 		display: flex;
@@ -452,23 +454,27 @@ a {
 	}
 }
 /*MEDIA QUERIES PC*/
-/* @media all and (min-width:1200px){
+ @media all and (min-width:1200px){
 .section-center{
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-.photo{
-  width: 290px;
-  height: 221px;
+.main__title{
+  font-size: 41px;
+    width: 294px;
+}
+.filter-btn{
+  margin-right: 21px;
+  height: 40px;
+  width: auto;
 }
 .menu-item{
   margin-right: 50px;
   margin-bottom: 50px;
 }
 }
- */
 
 /*CONTACT*/
 .contactArticle {
@@ -539,34 +545,31 @@ a {
 .contactForm input[type='submit']:active {
 	background-color: #666;
 }
-/*MEDIAQUERIES IPAD*/
-/* @media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
-.section__contact{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-} */
+
 
 /*MEDIA QUERIES PC*/
-/* @media all and (min-width:1200px){
-  .contactMe{
-    width: 280px;
+
+ @media all and (min-width:1200px){
+  .contactMeTitle{
+    width: 272px;
   }
+
   .contactForm{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .form__container{
-    width: 540px;
     align-self: center;
   }
-  }
+  
 .main__label, .inputMessage{
   font-size: 13px;
 }
- */
+
+ }
+ 
+
 /*FOOTER*/
 footer {
 	border-top: 1px solid #ff2e63;
@@ -619,21 +622,10 @@ footer {
   margin-right: 30px;
 }
 
-/*MEDIA QUERIES IPAD*/
-/* @media only screen and (min-device-width: 768px)  and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 1){
-  .footerListLink{
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .imgSocial{
-    width: 39px;
-    height: auto;
-    margin-right: 10px;
-}
-} */
+
 
 /*MEDIA QUERIES PC*/
-/* @media all and (min-width:1200px){
+@media all and (min-width:1200px){
   .footerListLink{
   font-size: 20px;
   margin-bottom: 15px;
@@ -643,4 +635,4 @@ footer {
   height: auto;
   margin-right: 10px;
 }
-} */
+}
