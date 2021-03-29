@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 		<link
 			href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap"
 			rel="stylesheet"
@@ -16,75 +17,166 @@
 	</head>
 	<body>
 		<!--NAVBAR-->
-		<label>
-			<input type="checkbox" />
-			<span class="menuHamburger">
-				<span class="hamburger"></span>
-			</span>
-			<ul>
-				<li>
-					<a href="#" class="link home"> Home</a>
-				</li>
-				<li>
-					<a href="#about" class="link">About Me </a>
-				</li>
-				<li>
-					<a href="#portfolio" class="link">Portfolio</a>
-				</li>
-				<li>
-					<a href="#contact" class="link">Contact</a>
-				</li>
-			</ul>
-		</label>
+		<div class="container-navBar">
+			<nav class="navBar-menu">
+				<ul class="navBar__list">
+					<li>
+						<a id="#navBar-link" class="smoothscroll selected" href="#">
+							Home
+						</a>
+					</li>
+					<li>
+						<a id="#navBar-link" class="smoothscroll" href="#about">
+							About Me
+						</a>
+					</li>
+					<li>
+						<a id="#navBar-link" class="smoothscroll" href="#portfolio">
+							Portfolio
+						</a>
+					</li>
+					<li>
+						<a id="#navBar-link" class="smoothscroll" href="#contact">
+							Contact
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 			<!--HEADER-->
+			<div class="header">
 			<div class="css-typing">
-				<p>I'm Eleonora</p>
-				<p>Frontend Junior</p>
-				<p>Coding is Rock & Roll</p>
+				<p class="text-animated">I'm Eleonora</p>
+				<p class="text-animated">Frontend Junior</p>
+				<p class="text-animated">Coding is Rock & Roll</p>
 			</div>
-		</section>
+			<div class="container__btn">
+				<button>
+					<a href="#about">
+						<img
+							src="https://img.icons8.com/android/24/ffffff/double-down.png"
+							alt="button"
+							class="btnHeader"
+						/>
+					</a>
+				</button>
+			</div>
+		</div>
 		<!--PRESENTATION-->
-		<main class="main__container">
-			
-				<div class="title">
-						<a name="about"><h2 class="main__title MyProjects">About Me</h2> </a>
-					</div>
-					<div class="container__presentation">
-				<div class="img__aboutMe">
-					<img class="imgSectionAboutMe" alt="developer" src="img/Me.gif">
+		<div class="container__title">
+				 <a name="about"> 
+					<h2 class="title">About Me</h2>
+				</a> 
 				</div>
-				<article class="main__article aboutMypresentation">
-				<p class="item-text">
-					I'm Eleonora, Eli for friends, becoming a
-					<strong>Frontend developer </strong> after an amazing experience
-					working in a start-up and digging deeper into Web sites and UX.
+				<div class="container__personalInfo">
+					<div class="personalInfo__text">
+				   <p class="text">
+					I'm Eleonora becoming a Frontend developer after an amazing experience working in a start-up and
+					digging deeper into Web sites and UX. In addition, I'm a sociologist holding a master degree in
+					Human Resources. I think study human behavior it's extremely important in this job for this reason I
+					did different courses about User Research CX Research and UX Testing in Platzi. My studies and
+					experience working closely with people from different parts of the world make me an empathetic
+					person. I believe in the energy generated from teamwork. I like to describe myself as an observant
+					and committed professional.
 				</p>
-				<p>&nbsp;</p>
-				<p class="item-text">
-					In addition I'm a sociologist holding a master in human resources. 
-				     I did different courses about<strong>User Research CX Research and UX Testing</strong> in Platzi, I
-					follow the company TeaCup Lab's and I really enjoy reading thier
-					researches.
-				</p>
-				<p>&nbsp;</p>
-				<p class="item-text">
-					<strong>I'm still studying hard </strong>to achive a better level of
-					coding and thank to this community that inspires me every day I'm
-					really excited to fulfil my goal.
-				</p>
-				<p>&nbsp;</p>
-				<blockquote class="item-text quote">
-					My motto is: “'If we're growing, we're always going to be out of our
-					comfort zone.' (John Maxwell).
-				</blockquote>
 				</div>
-			</article>
-			</main>
+				<div class="container__photo">
+					<img alt="girl" src="img/Eli.jpeg" class="photo__aboutMe" />
+				</div>
+			</div>
+			<div class="aboutMe__contact">
+				<h2 class="title">My contact</h2>
+				<p class="text">City: Madrid</p>
+				<p class="text">Phone: +34 602726345</p>
+				<a target="_blank" class="email" href="mailto:eleonoradellamico4@gmail.com">
+					eleonoradellamico4@gmail.com
+				</a>
+			</div>
+			<div class="btn__aboutMe">
+				<button type="button" class="btn btn-outline-light">
+				
+					<img class="img__btn-cv"src="https://img.icons8.com/flat-round/64/000000/download-from-cloud--v1.png"/>
+					<a target="_blank"
+						href="https://drive.google.com/file/d/15tRruG2eUCaDzYXY-p8MOAR1eBTM21lF/view?usp=sharing"
+						download="Eleonora__DellAmico__CV"
+					>
+						Download CV
+					</a>
+				</button>
+			</div>
+			<!--EXPERIENCE-->
+			<div class="container__experience">
+			<div class="container__experienceTitle">
+				<h2 class="title">Experience</h2>
+			</div>
+			<div class="container__experienceDetails">
+				<h2 class="title"> Junior Frontend Developer</h2>
+				<h5 class="title__detailsCompany">Company:Adalab</h5>
+				<h5 class="title__detailsCompany">sept 2020 – dic 2020</h5>
+				<h5 class="title__detailsCompany">Madrid</h5>
+			</div>
+			<div class="container__experienceInfo">
+				<p class="text">
+					Adalab it is a training program that provides the knowledge and tools for front-end web development:
+				</p>
+				<ul class="experience__list">
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Layout design: HTML5, CSS3, Flexbox, CSS Grid, responsive design,SASS,animation y design for
+						components.
+					</li>
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Development frameworks web: Bootstrap.
+					</li>
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Knowledge: JavaScrip.
+					</li>
+					<li class="text">
+						<img  class="point__list" src="./img/point.png" alt="point list">
+						ES6 y creation of SPAs con React.
+					</li>
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Version control: Git, GitHub.
+					</li>
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Development experience using Agile y SCRUM.
+					</li>
+					<li class="text">
+						<img class="point__list" src="./img/point.png" alt="point list">
+						Developer tools: Atom, Gulp,Terminal.
+					</li>
+					<li class="text">
+						<img class="point__list"src="./img/point.png" alt="point list">
+						Communication tools teamwork: Slack, Trello, GitHub.
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--SKILLS-->
+<div class="skills">
+	<h1 class="title">My skills</h1>
+	<li>
+		<h3 class="title-skills">HTML</h3><span class="bar"> <span class="html"> </span></span>
+	</li>
+	<li>
+		<h3 class="title-skills">CSS</h3><span class="bar"> <span class="css"> </span></span>
+	</li>
+	<li>
+		<h3 class="title-skills">javascript</h3><span class="bar"> <span class="js"> </span></span>
+	</li>
+	<li>
+		<h3 class="title-skills">React</h3><span class="bar"> <span class="react"> </span></span>
+	</li>
+</div>		
 			<!--PORTFOLIO-->
 			<section class="menu">
 	<!-- title -->
 	<div class="title">
-		<a name="portfolio"> <h2 class="main__title MyProjects">My Projects</h2></a>
+		<a name="portfolio"> <h2 class="title">My Projects</h2></a>
 	<div class="underline"></div>
 	</div>
   <!-- filter buttons-->
@@ -108,10 +200,13 @@ alt="menu-item" />
 				<header>
 					<h4>Landing page</h4>
         </header>
+		<button class="filter-btn" type="button" 
+data-id="javascript">JavaScript</button>
 		<p class="item-text"></p>
-		<a class="link__project" title="titlePhoto"href="" target="_blank"><img class="linkIcon" src="./img/Link.png" alt="link"/></a>
-		 <a class="link__gitHub"title="titlePhoto"href="" target="_blank"><img class="gitIcon" src="./img/gitIcon.png" alt="link"/></a>
+		<a class="link__project" title="titlePhoto"href="" target="_blank"><img class="linkIcon" src="" alt="link"/></a>
+		 <a class="link__gitHub"title="titlePhoto"href="" target="_blank"><img class="gitIcon" src="" alt="link"/></a>
 			</div>
+			
 		</article>
 		<!-- end of sigle item-->
 	</div>
@@ -120,72 +215,50 @@ alt="menu-item" />
 
 
 
-			<!--Contact-->
-
-		<section class="section__contact">
-			<article class="main__article contactArticle">
-				<a name="contact"><h2 class="main__title contactMeTitle">Contact Me</h2></a>
-			</article>
-			<div class="separator">
-				<span></span>
-			</div>
-
-		<a name="#contact"><div class="form__container"></a>
-				
-				<form class="contactForm">
-					<div class="main__label">
-						<label>Your Name:</label><input type="text" value="" required/>
-					</div>
-					<div class="main__label">
-						<label> Your Email:</label><input type="text" value="" required/>
-					</div>
-					<div class="main__label">
-						<label>Subject:</label><input type="text" value="" required />
-					</div>
-					<div class="main__label">
-						<label>Message:</label><textarea rows="6"></textarea>
-					</div>
-					<div class="main__label">
-						<input class="inputMessage active" type="submit" value="Submit" />
-					</div>
-				</form>
-			</div>
-		</section>
+			
 		<footer>
-			<div class="footer__container">
-				<ul class="footer__list">
-					<li class="footerListLink">
-						<a href="#header" class="linkFooter"> Home</a>
-					</li>
-					<li class="footerListLink">
-						<a href="#about" class="linkFooter">About Me </a>
-					</li>
-					<li class="footerListLink">
-						<a href="#portfolio" class="linkFooter">Portfolio</a>
-					</li>
-					<li class="footerListLink">
-						<a href="#contact" class="linkFooter">Contact</a>
-					</li>
-				</ul>
-				<div class="footer__socialMedia">
-					<ul class="footer__list--socialIcons">
-						<li class="footerListLink">
-							<a title="Twitter" href="https://twitter.com/eli_ucora" target="_blank"><img alt="logo twitter"class="imgSocial" src="https://img.icons8.com/color/48/000000/twitter--v2.png"/> </a>
-						</li>
-						<li class="footerListLink">
-						<a title="GitHub" href="https://github.com/EleonoraDellamico" target="_blank"><img alt="logo GitHub"class="imgSocial" src="https://img.icons8.com/color/48/000000/github-2.png"/></a>
-						</li>
-						<li class="footerListLink">
-						<a title="Linkedin" href="https://www.linkedin.com/in/eleonora-dell-amico/" target="_blank"><img  alt="logo linkedin"class="imgSocial" src="https://img.icons8.com/color/48/000000/linkedin-2--v2.png"/></a>
-						</li>
-						<li class="footerListLink">
-							<a title="mail" href="mailto:eleonoradellamico4@gmail.com" target="_blank"><img class="imgSocial" src="https://img.icons8.com/dusk/64/000000/secured-letter--v2.png"/></a>
-						</li>
-					</ul>
+			<div class="container__footer">
+				<div class="container__btn" id="btn__up">
+					<button>
+						<a href="#about">
+							<img src="img/btnUp.png" alt="button" class= "btn__footer"/>
+						</a>
+					</button>
+				</div>
+				<div class="container__title">
+					<a name="contact">
+						<h2 class="title" id="footer__title">
+							Contact me
+						</h2>
+					</a>
+				</div>
+				<div class="container_link__footer">
+					<a title="GitHub" href="https://github.com/EleonoraDellamico" target="_blank">
+						<img class="link__footer" src="./img/githubWhite.png" alt="gitHub" />
+					</a>
+					<a title="Linkedin" href="https://www.linkedin.com/in/eleonora-dell-amico/" target="_blank">
+						<img class="link__footer" src="img/linkedin2.png" alt="gitHub" />
+					</a>
+					<a title="Twitter" href="https://twitter.com/eli_ucora" target="_blank">
+						<img class="link__footer" src="img/twitterpng.png" alt="gitHub" />
+					</a>
+					<a title="mail" href="mailto:eleonoradellamico4@gmail.com" target="_blank">
+						<img class="link__footer" src="img/Email.png" alt="gitHub" />
+					</a>
+				</div>
+				<div className="container__small">
+					<small class="small">Made with </small>
+					<img class="link__small" alt="heart" src="img/heart.png" />
+					<small class="small">a lot of </small>
+					<img class="link__small" alt="heart" src="img/Coffee.png" />
+					<small class="small">and</small>
+					<img class="link__small" alt="brain" src="img/brain.png" />
+					<small class="small">By Eli</small>
 				</div>
 			</div>
 		</footer>
 
 		<script src="index.js"></script>
+		<script src="data.json"></script>
 	</body>
 </html>
