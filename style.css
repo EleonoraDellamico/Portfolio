@@ -214,14 +214,13 @@ html {
 	font-size: 16px;
 	padding: 16px 32px;
 }
-#try {
+.container__img {
 	position: relative;
 	width: 50%;
 }
 
 .image {
 	opacity: 1;
-	display: block;
 	width: 100%;
 	height: auto;
 	transition: .5s ease;
@@ -239,10 +238,10 @@ html {
 	text-align: center;
 }
 
-#try:hover .image {
+.container__img:hover .image {
 	opacity: 0.3;
 }
 
-#try:hover .middle {
+.container__img:hover .middle {
 	opacity: 1;
 }
