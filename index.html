@@ -5,67 +5,56 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-		<link
-			href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+<!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 		<link rel="stylesheet" href="style.css" />
 		<title>Portfolio Eli</title>
 	</head>
 	<body>
 		<!--NAVBAR-->
-		<div class="container-navBar">
-			<nav class="navBar-menu">
-				<ul class="navBar__list">
-					<li>
-						<a id="#navBar-link" class="smoothscroll selected" href="#">
-							Home
-						</a>
-					</li>
-					<li>
-						<a id="#navBar-link" class="smoothscroll" href="#about">
-							About Me
-						</a>
-					</li>
-					<li>
-						<a id="#navBar-link" class="smoothscroll" href="#portfolio">
-							Portfolio
-						</a>
-					</li>
-					<li>
-						<a id="#navBar-link" class="smoothscroll" href="#contact">
-							Contact
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">PantaDev.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About Me.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio.</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact.</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 			<!--HEADER-->
+			
+		<div class="hero">
 			<div class="header">
-			<div class="css-typing">
-				<p class="text-animated">I'm Eleonora</p>
-				<p class="text-animated">Frontend Junior</p>
-				<p class="text-animated">Coding is Rock & Roll</p>
-			</div>
-			<div class="container__btn">
-				<button>
-					<a href="#about">
-						<img
-							src="https://img.icons8.com/android/24/ffffff/double-down.png"
-							alt="button"
-							class="btnHeader"
-						/>
-					</a>
-				</button>
+				<h1 class="line anim-typewriter">Eli, Frontend Junior.</h1>
 			</div>
 		</div>
+		<div class="scroll-down"></div>
+
 		<!--PRESENTATION-->
 		<div class="container__title">
 				 <a name="about"> 
-					<h2 class="title">About Me</h2>
+					<h2 class="title" id="title__section__aboutMe">About Me</h2>
 				</a> 
 				</div>
 				<div class="container__personalInfo">
@@ -80,183 +69,73 @@
 					and committed professional.
 				</p>
 				</div>
-				<div class="container__photo">
-					<img alt="girl" src="img/Eli.jpeg" class="photo__aboutMe" />
-				</div>
-			</div>
-			<div class="aboutMe__contact">
-				<h2 class="title">My contact</h2>
-				<p class="text">City: Madrid</p>
-				<p class="text">Phone: +34 602726345</p>
-				<a target="_blank" class="email" href="mailto:eleonoradellamico4@gmail.com">
-					eleonoradellamico4@gmail.com
-				</a>
 			</div>
 			<div class="btn__aboutMe">
-				<button type="button" class="btn btn-outline-light">
-				
-					<img class="img__btn-cv"src="https://img.icons8.com/flat-round/64/000000/download-from-cloud--v1.png"/>
+				<button type="button" class="btn btn-light">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-arrow-down-fill" viewBox="0 0 16 16">
+  <path d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708z"/>
+</svg>
 					<a target="_blank"
 						href="https://drive.google.com/file/d/15tRruG2eUCaDzYXY-p8MOAR1eBTM21lF/view?usp=sharing"
 						download="Eleonora__DellAmico__CV"
-					>
+					id="download_cv">
 						Download CV
 					</a>
 				</button>
 			</div>
-			<!--EXPERIENCE-->
-			<div class="container__experience">
-			<div class="container__experienceTitle">
-				<h2 class="title">Experience</h2>
-			</div>
-			<div class="container__experienceDetails">
-				<h2 class="title"> Junior Frontend Developer</h2>
-				<h5 class="title__detailsCompany">Company:Adalab</h5>
-				<h5 class="title__detailsCompany">sept 2020 – dic 2020</h5>
-				<h5 class="title__detailsCompany">Madrid</h5>
-			</div>
-			<div class="container__experienceInfo">
-				<p class="text">
-					Adalab it is a training program that provides the knowledge and tools for front-end web development:
-				</p>
-				<ul class="experience__list">
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Layout design: HTML5, CSS3, Flexbox, CSS Grid, responsive design,SASS,animation y design for
-						components.
-					</li>
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Development frameworks web: Bootstrap.
-					</li>
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Knowledge: JavaScrip.
-					</li>
-					<li class="text">
-						<img  class="point__list" src="./img/point.png" alt="point list">
-						ES6 y creation of SPAs con React.
-					</li>
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Version control: Git, GitHub.
-					</li>
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Development experience using Agile y SCRUM.
-					</li>
-					<li class="text">
-						<img class="point__list" src="./img/point.png" alt="point list">
-						Developer tools: Atom, Gulp,Terminal.
-					</li>
-					<li class="text">
-						<img class="point__list"src="./img/point.png" alt="point list">
-						Communication tools teamwork: Slack, Trello, GitHub.
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!--SKILLS-->
-<div class="skills">
-	<h1 class="title">My skills</h1>
-	<li>
-		<h3 class="title-skills">HTML</h3><span class="bar"> <span class="html"> </span></span>
-	</li>
-	<li>
-		<h3 class="title-skills">CSS</h3><span class="bar"> <span class="css"> </span></span>
-	</li>
-	<li>
-		<h3 class="title-skills">javascript</h3><span class="bar"> <span class="js"> </span></span>
-	</li>
-	<li>
-		<h3 class="title-skills">React</h3><span class="bar"> <span class="react"> </span></span>
-	</li>
-</div>		
 			<!--PORTFOLIO-->
 			<section class="menu">
-	<!-- title -->
-	<div class="title">
-		<a name="portfolio"> <h2 class="title">My Projects</h2></a>
-	<div class="underline"></div>
-	</div>
-  <!-- filter buttons-->
-  <div class="btn-container">
-    <button class="filter-btn" type="button" 
-data-id="all">All</button>
-    <button class="filter-btn" type="button" 
-data-id="htmlCss">Html&Css</button>
-    <button class="filter-btn" type="button" 
-data-id="javascript">JavaScript</button>
-    <button class="filter-btn" 
-type="button"data-id="react">React</button>
-  </div>
-	<!-- menu items-->
-	<div class="section-center">
-		<!-- sigle item-->
-		<article class="menu-item">
-			<img src="./img/Sea.jpg" class="photo" 
-alt="menu-item" />
-			<div class="item-info">
-				<header>
-					<h4>Landing page</h4>
-        </header>
-		<button class="filter-btn" type="button" 
-data-id="javascript">JavaScript</button>
-		<p class="item-text"></p>
-		<a class="link__project" title="titlePhoto"href="" target="_blank"><img class="linkIcon" src="" alt="link"/></a>
-		 <a class="link__gitHub"title="titlePhoto"href="" target="_blank"><img class="gitIcon" src="" alt="link"/></a>
+	<!-- CONTAINER TITLE PORTFOLIO -->
+	<div class="container container__title ">
+		<div class="row">
+			<div class="col-12 d-flex justify-content-center">
+				<a name="portfolio"> <h2 class="title" id="title__section__Portfolio">My Projects</h2></a>
 			</div>
-			
-		</article>
-		<!-- end of sigle item-->
-	</div>
-</section>
+			<div class="col-12 d-flex justify-content-center">
+				<p class="text">I love minimal style</p>
+			</div>
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-md-6 col-xl-4"id="try">
+						<img src="./img/Pomdoro__timer.png" class="img-fluid image" alt="Responsive image">
+						<div class="middle">
+    						<div class="over">John Doe</div>
+  						</div>
+					</div>
 
-
-
-
-			
-		<footer>
-			<div class="container__footer">
-				<div class="container__btn" id="btn__up">
-					<button>
-						<a href="#about">
-							<img src="img/btnUp.png" alt="button" class= "btn__footer"/>
-						</a>
-					</button>
-				</div>
-				<div class="container__title">
-					<a name="contact">
-						<h2 class="title" id="footer__title">
-							Contact me
-						</h2>
-					</a>
-				</div>
-				<div class="container_link__footer">
-					<a title="GitHub" href="https://github.com/EleonoraDellamico" target="_blank">
-						<img class="link__footer" src="./img/githubWhite.png" alt="gitHub" />
-					</a>
-					<a title="Linkedin" href="https://www.linkedin.com/in/eleonora-dell-amico/" target="_blank">
-						<img class="link__footer" src="img/linkedin2.png" alt="gitHub" />
-					</a>
-					<a title="Twitter" href="https://twitter.com/eli_ucora" target="_blank">
-						<img class="link__footer" src="img/twitterpng.png" alt="gitHub" />
-					</a>
-					<a title="mail" href="mailto:eleonoradellamico4@gmail.com" target="_blank">
-						<img class="link__footer" src="img/Email.png" alt="gitHub" />
-					</a>
-				</div>
-				<div className="container__small">
-					<small class="small">Made with </small>
-					<img class="link__small" alt="heart" src="img/heart.png" />
-					<small class="small">a lot of </small>
-					<img class="link__small" alt="heart" src="img/Coffee.png" />
-					<small class="small">and</small>
-					<img class="link__small" alt="brain" src="img/brain.png" />
-					<small class="small">By Eli</small>
+					<div class="col-12 col-md-6 col-xl-4">
+						<img src="./img/TodoList.png" class="img-fluid image" alt="Responsive image">
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+					<img src="./img/Quote.png" class="img-fluid image" alt="Responsive image">
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<img src="./img/Rick_Morty.png" class="img-fluid image" alt="Responsive image">
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<img src="./img/mareaCoders.png" class="img-fluid image" alt="Responsive image">
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<img src="./img/cardBusiness.png" class="img-fluid image" alt="Responsive image">
+					</div>
+					<div class="col-12 col-md-6 col-xl-4">
+						<img src="./img/Landing.png" class="img-fluid image" alt="Responsive image">
+					</div>
 				</div>
 			</div>
-		</footer>
+		</div>
+		
+	
+	
+	<!--CONTAINER FOTOS-->
+  <!--AOS-->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.5/t.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 		<script src="index.js"></script>
 		<script src="data.json"></script>
