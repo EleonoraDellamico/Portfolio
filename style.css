@@ -208,15 +208,12 @@ html {
 	-webkit-text-stroke-color: black;
 	margin-bottom: 20px;
 }
-.over {
-	background-color: #4caf50;
-	color: white;
-	font-size: 16px;
-	padding: 16px 32px;
-}
+
 .container__img {
 	position: relative;
 	width: 50%;
+	padding: 10px !important;
+	margin-bottom: 10px;
 }
 
 .image {
@@ -244,4 +241,19 @@ html {
 
 .container__img:hover .middle {
 	opacity: 1;
+}
+a {
+	text-decoration: none;
+	color: black !important;
+}
+
+@media all and (min-device-width: 768px) {
+	.image {
+		height: 230px;
+	}
+}
+@media all and (min-width: 1024px) {
+	.image {
+		height: 310px;
+	}
 }
