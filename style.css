@@ -173,6 +173,14 @@ html {
 	line-height: 1.8;
 	text-align: justify;
 }
+strong {
+	position: relative;
+	box-shadow: inset 0 -0.5em 0 rgb(0 227 58 / 40%);
+	transition: box-shadow .2s ease-in-out;
+}
+strong:hover {
+	box-shadow: inset 0 -1.5em 0 rgba(0, 227, 58, 0.5);
+}
 #download_cv {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
@@ -213,6 +221,9 @@ html {
 	}
 }
 /*PORTFOLIO*/
+#container-portfolio {
+	padding: 20px;
+}
 .container__title {
 	display: flex !important;
 	align-items: center !important;
@@ -230,15 +241,19 @@ html {
 .container__img {
 	position: relative;
 	padding: 10px !important;
-	margin-bottom: 10px;
+	margin-bottom: 62px !important;
+	height: 236px !important;
+	width: auto !important;
 }
 
 .image {
 	opacity: 1;
-	width: 100%;
 	height: auto;
 	transition: .5s ease;
 	backface-visibility: hidden;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .middle {
@@ -265,17 +280,11 @@ a {
 }
 
 @media all and (min-device-width: 768px) {
-	.image {
-		height: 230px;
-	}
 	.container__img {
 		padding: 20px !important;
 	}
 }
 @media all and (min-width: 1024px) {
-	.image {
-		height: 310px;
-	}
 	.container__title {
 		margin-top: 300px !important;
 	}
