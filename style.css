@@ -317,6 +317,8 @@ li {
 	font-family: "Lato" !important;
 	font-weight: lighter !important;
 	font-size: 18px !important;
+	list-style: none !important;
+	color: white !important;
 }
 
 .info h4 {
