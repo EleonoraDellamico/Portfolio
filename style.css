@@ -170,8 +170,9 @@ html {
 }
 
 #title__section__aboutMe,
-#title__section__skills {
-	color: transparent;
+#title__section__skills,
+#title__section__Portfolio {
+	color: white;
 	font-size: 2.5em;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: black;
@@ -199,7 +200,7 @@ strong:hover {
 	text-transform: uppercase;
 	font-size: small;
 	text-decoration: none;
-	color: black;
+	color: black !important;
 }
 .btn__aboutMe {
 	display: flex;
@@ -234,7 +235,108 @@ strong:hover {
 	}
 }
 /*PORTFOLIO*/
-#container-portfolio {
+#container-image-one {
+	height: 40vh;
+	background-image: url(./img/netflix__html__css.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#container-image-two {
+	height: 40vh;
+	background-image: url(./img/MusicSpotify.jpg);
+	background-position: center;
+	background-size: cover;
+}
+#container-image-three {
+	height: 40vh;
+	background-image: url(./img/new_marea.png);
+	background-position: center;
+	background-size: cover;
+}
+#container-image-four {
+	height: 40vh;
+	background-image: url(./img/SplitLandingPage.png);
+	background-position: right;
+	background-size: cover;
+}
+#container-image-five {
+	height: 40vh;
+	background-image: url(./img/recipe.png);
+	background-position: center;
+	background-size: cover;
+}
+#container-image-six {
+	height: 40vh;
+	background-image: url(./img/planet.png);
+	background-position: center;
+	background-size: cover;
+}
+#container-image-seven {
+	height: 40vh;
+	background-image: url(./img/S.T.A.R.\ Coding\ LABS.png);
+	background-position: inherit;
+	background-size: cover;
+}
+#container-image-eight {
+	height: 40vh;
+	background-image: url(./img/twitterQuote.png);
+	background-position: center;
+	background-size: cover;
+}
+.containerImage {
+	position: relative;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: black;
+}
+.containerImage:hover .overlay {
+	opacity: 1;
+}
+#overlaySpotify {
+	background-color: rgb(85, 211, 104);
+}
+#overlayMareaCoders {
+	background-color: rgb(85, 125, 211);
+}
+#overlaySplit {
+	background-color: rgb(233, 106, 28);
+}
+#overlayRecipe {
+	background-color: rgb(244, 227, 104);
+}
+#overlayWorld {
+	background-color: rgb(225, 21, 167);
+}
+#overlayCard {
+	background-color: rgb(225, 21, 52);
+}
+#overlayTwitter {
+	background-color: rgb(41, 39, 39);
+}
+.texto {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.container-btn {
+	margin-top: 25px;
+}
+/* #container-portfolio {
 	padding: 20px;
 }
 .container__title {
@@ -252,6 +354,11 @@ strong:hover {
 }
 
 .container__img {
+	width: 100vw;
+	height: 30vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	position: relative;
 	margin-bottom: 20px !important;
 }
@@ -265,38 +372,61 @@ strong:hover {
 	width: 100%;
 	object-fit: cover;
 }
-
-.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
+.descriptionInfo {
+	margin-bottom: 15px;
+	background-color: white;
+	padding: 26px;
 }
-
-.container__img:hover .image {
-	opacity: 0.3;
+#image-one {
+	background-image: url("./img/myNetflix.png");
 }
-
-.container__img:hover .middle {
-	opacity: 1;
+#image-two {
+	background-image: url("./img/new_marea.png");
+}
+#image-three {
+	background-image: url("./img/rickMorty.png");
+}
+.container-btn {
+	display: flex;
+	justify-content: center;
+}
+.btn-light {
+	margin-right: 6px !important;
 }
 a {
 	text-decoration: none;
 	color: black !important;
 }
-.btn-gitHub {
-	background-color: #f79e53;
-}
-.btn-webPage {
-	background-color: #93abff;
-}
+
 @media all and (min-device-width: 768px) {
 	.container__img {
-		padding: 20px !important;
+		width: 40vw;
+		height: 30vh;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	#image-one {
+		background-image: url("./img/myNetflix.png");
+	}
+	#image-two {
+		background-image: url("./img/new_marea.png");
+	}
+	#image-three {
+		background-image: url("./img/rickMorty.png");
+	}
+	#image-four {
+		background-image: url("./img/spotify.jpg");
+	}
+	.descriptionInfo {
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		z-index: 999;
+		position: relative;
+	}
+	.image {
+		height: 100%;
 	}
 }
 @media all and (min-width: 1024px) {
@@ -306,7 +436,11 @@ a {
 	.container__img {
 		padding: 60px !important;
 	}
+	.image {
+		height: 100%;
+	}
 }
+ */
 /*FOOTER */
 .info {
 	width: 100vw;
@@ -325,6 +459,7 @@ a {
 li {
 	list-style: none;
 	color: white !important;
+	text-decoration: none !important;
 }
 #email {
 	font-family: "Lato" !important;
@@ -332,6 +467,7 @@ li {
 	font-size: 18px !important;
 	list-style: none !important;
 	color: white !important;
+	text-decoration: none !important;
 }
 
 .info h4 {
@@ -355,6 +491,7 @@ li {
 	font-size: 18px;
 	padding-left: 20px;
 	font-weight: lighter;
+	text-decoration: none !important;
 }
 
 #lk::before {
@@ -411,6 +548,7 @@ li {
 }
 .link-footer {
 	color: white !important;
+	text-decoration: none !important;
 }
 
 @media (max-width: 768px) {
