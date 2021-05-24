@@ -13,16 +13,14 @@ html {
 }
 .navbar {
 	z-index: 999 !important;
-	background-color: black !important;
+	background-color: white !important;
 }
 .nav-link,
 .navbar-brand {
-	color: white !important;
+	color: black !important;
 	font-family: 'Lato', sans-serif;
 }
-.navbar-light .navbar-toggler-icon {
-	filter: invert(1) !important;
-}
+
 @media (min-width: 992px) {
 	.navbar-expand-lg .navbar-collapse {
 		display: flex !important;
@@ -38,17 +36,24 @@ html {
 .hero {
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: black;
+	background-image: url("https://images.squarespace-cdn.com/content/v1/552fe360e4b003df8dd2e8f9/1506956053021-M9TQOZLN4TSF94QSLIMN/ke17ZwdGBToddI8pDm48kDrMjE7hBq4fQV3wYHraitJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzj2bmKhA1a89vhGCTEuFcMrGIAhTIwGn2DOXg1A8iNSPxvh_zK_LmuDa3ZMbEzfBk/Eye_4.gif");
+	/* background-image: url("http://assets.stickpng.com/images/580b585b2edbce24c47b2a72.png"); */
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
-
+.header {
+	margin-top: 335px;
+}
 .hero h1 {
 	font-family: 'Lato', sans-serif !important;
 	text-align: center;
 	letter-spacing: 1px;
-	line-height: 58px;
-	color: white;
+	line-height: 56px;
+	color: black;
 	font-weight: lighter !important;
 	font-size: 21px !important;
 }
@@ -119,8 +124,8 @@ html {
 	text-shadow: 0;
 	width: 13px;
 	height: 13px;
-	border-bottom: 2px solid #fff;
-	border-right: 2px solid #fff;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
 	-webkit-transform: translate(-50%, 0) rotate(45deg);
 	animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
@@ -140,7 +145,14 @@ html {
 }
 
 /*ABOUT ME*/
-
+#section_about_me {
+	background-color: #2db3b76b;
+	margin-top: 67px;
+	padding: -2px;
+	padding-top: 15px;
+	padding-bottom: 57px;
+	margin-bottom: 51px;
+}
 .container__title {
 	width: 100vw;
 	display: flex;
@@ -175,11 +187,12 @@ html {
 }
 strong {
 	position: relative;
-	box-shadow: inset 0 -0.5em 0 rgb(30 210 76 / 40%);
+	box-shadow: inset 0 -0.5em 0 rgb(179 212 97);
 	transition: box-shadow .2s ease-in-out;
+	cursor: pointer;
 }
 strong:hover {
-	box-shadow: inset 0 -1.5em 0 rgb(30 210 76 / 40%);
+	box-shadow: inset 0 -1.5em 0 rgb(179 212 97);
 }
 #download_cv {
 	font-family: 'Open Sans', sans-serif;
