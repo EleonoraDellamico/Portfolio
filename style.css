@@ -115,7 +115,6 @@ html {
 .scroll-down {
 	position: absolute;
 	left: 50%;
-	bottom: 100px;
 	display: block;
 	text-align: center;
 	font-size: 20px;
@@ -146,9 +145,8 @@ html {
 
 /*ABOUT ME*/
 #section_about_Me {
-	background-color: #2db3b76b;
+	background-color: #0653de26;
 	margin-top: 67px;
-	padding: -2px;
 	padding-top: 15px;
 	padding-bottom: 57px;
 	margin-bottom: 51px;
@@ -159,6 +157,15 @@ html {
 	justify-content: center;
 	margin-top: 100px;
 	align-items: center;
+}
+.container-photo {
+	width: 55vw;
+	height: auto;
+	margin: auto;
+	padding: 20px;
+}
+.image-developer {
+	width: 100%;
 }
 
 .container__personalInfo,
@@ -188,12 +195,12 @@ html {
 }
 strong {
 	position: relative;
-	box-shadow: inset 0 -0.5em 0 rgb(179 212 97);
+	box-shadow: inset 0 -0.5em 0 rgb(63 208 166 / 45%);
 	transition: box-shadow .2s ease-in-out;
 	cursor: pointer;
 }
 strong:hover {
-	box-shadow: inset 0 -1.5em 0 rgb(179 212 97);
+	box-shadow: inset 0 -1.5em 0 rgb(63 208 166 / 45%);
 }
 #download_cv {
 	font-family: 'Open Sans', sans-serif;
@@ -218,6 +225,9 @@ strong:hover {
 	}
 	.personalInfo__text {
 		width: 50%;
+	}
+	.container-photo {
+		width: 36vw;
 	}
 	.aboutMe__contact {
 		padding: 50px;
@@ -255,7 +265,7 @@ strong:hover {
 }
 #container-image-four {
 	height: 40vh;
-	background-image: url(./img/SplitLandingPage.png);
+	background-image: url(./img/rick.jpeg);
 	background-position: right;
 	background-size: cover;
 }
@@ -336,111 +346,7 @@ strong:hover {
 .container-btn {
 	margin-top: 25px;
 }
-/* #container-portfolio {
-	padding: 20px;
-}
-.container__title {
-	display: flex !important;
-	align-items: center !important;
-	flex-direction: column !important;
-	margin-top: 70px !important;
-}
-#title__section__Portfolio {
-	color: transparent;
-	font-size: 2.5em;
-	-webkit-text-stroke-width: 1px;
-	-webkit-text-stroke-color: black;
-	margin-bottom: 20px;
-}
 
-.container__img {
-	width: 100vw;
-	height: 30vh;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: relative;
-	margin-bottom: 20px !important;
-}
-
-.image {
-	opacity: 1;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-	height: 88%;
-	width: 100%;
-	object-fit: cover;
-}
-.descriptionInfo {
-	margin-bottom: 15px;
-	background-color: white;
-	padding: 26px;
-}
-#image-one {
-	background-image: url("./img/myNetflix.png");
-}
-#image-two {
-	background-image: url("./img/new_marea.png");
-}
-#image-three {
-	background-image: url("./img/rickMorty.png");
-}
-.container-btn {
-	display: flex;
-	justify-content: center;
-}
-.btn-light {
-	margin-right: 6px !important;
-}
-a {
-	text-decoration: none;
-	color: black !important;
-}
-
-@media all and (min-device-width: 768px) {
-	.container__img {
-		width: 40vw;
-		height: 30vh;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	#image-one {
-		background-image: url("./img/myNetflix.png");
-	}
-	#image-two {
-		background-image: url("./img/new_marea.png");
-	}
-	#image-three {
-		background-image: url("./img/rickMorty.png");
-	}
-	#image-four {
-		background-image: url("./img/spotify.jpg");
-	}
-	.descriptionInfo {
-		height: 30vh;
-		display: flex;
-		flex-direction: column;
-		z-index: 999;
-		position: relative;
-	}
-	.image {
-		height: 100%;
-	}
-}
-@media all and (min-width: 1024px) {
-	.container__title {
-		margin-top: 185px !important;
-	}
-	.container__img {
-		padding: 60px !important;
-	}
-	.image {
-		height: 100%;
-	}
-}
- */
 /*FOOTER */
 .info {
 	width: 100vw;
