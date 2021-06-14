@@ -40,8 +40,6 @@ html {
 	align-items: center;
 	justify-content: flex-start;
 	background-image: url("https://64.media.tumblr.com/b74042bb4868138f3d6dd883463b3ecf/tumblr_otfxyw6ZT91wo2a1ao1_1280.gifv");
-	/* background-image: url("https://images.squarespace-cdn.com/content/v1/552fe360e4b003df8dd2e8f9/1506956053021-M9TQOZLN4TSF94QSLIMN/ke17ZwdGBToddI8pDm48kDrMjE7hBq4fQV3wYHraitJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzj2bmKhA1a89vhGCTEuFcMrGIAhTIwGn2DOXg1A8iNSPxvh_zK_LmuDa3ZMbEzfBk/Eye_4.gif"); */
-	/* background-image: url("http://assets.stickpng.com/images/580b585b2edbce24c47b2a72.png"); */
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -59,9 +57,30 @@ html {
 	font-size: 21px !important;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
 	.header h1 {
-		font-size: 26px;
+		font-size: 41px !important;
+	}
+	.header {
+		margin-top: 164px;
+	}
+	.navbar-brand {
+		font-size: 38px !important;
+	}
+	.hero {
+		height: 84vh;
+	}
+	.scroll-down {
+		margin-top: 30px !important;
+	}
+	.container__title {
+		font-size: 40px !important;
+	}
+	.personalInfo__text {
+		width: 76% !important;
+	}
+	.text {
+		font-size: 22px !important;
 	}
 }
 @media all and (min-width: 1024px) {
@@ -147,16 +166,18 @@ html {
 /*ABOUT ME*/
 #section_about_Me {
 	background-color: black;
-	margin-top: 67px;
 	padding-top: 15px;
 	padding-bottom: 57px;
-	margin-bottom: 51px;
+	height: 81vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 100px 0 100px 0;
 }
 .container__title {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
-	margin-top: 100px;
 	align-items: center;
 }
 .container-photo {
@@ -246,6 +267,22 @@ strong:hover {
 	}
 	.container__title {
 		margin-top: 300px !important;
+	}
+}
+/*SKILL*/
+#section-skills {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 100px 0 100px 0;
+	height: 59vh;
+}
+@media all and (min-device-width: 768px) {
+	section-skills {
+		height: 72vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 /*PORTFOLIO*/
