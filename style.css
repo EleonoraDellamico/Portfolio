@@ -38,15 +38,16 @@ html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-	background-image: url("https://images.squarespace-cdn.com/content/v1/552fe360e4b003df8dd2e8f9/1506956053021-M9TQOZLN4TSF94QSLIMN/ke17ZwdGBToddI8pDm48kDrMjE7hBq4fQV3wYHraitJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzj2bmKhA1a89vhGCTEuFcMrGIAhTIwGn2DOXg1A8iNSPxvh_zK_LmuDa3ZMbEzfBk/Eye_4.gif");
+	justify-content: flex-start;
+	background-image: url("https://64.media.tumblr.com/b74042bb4868138f3d6dd883463b3ecf/tumblr_otfxyw6ZT91wo2a1ao1_1280.gifv");
+	/* background-image: url("https://images.squarespace-cdn.com/content/v1/552fe360e4b003df8dd2e8f9/1506956053021-M9TQOZLN4TSF94QSLIMN/ke17ZwdGBToddI8pDm48kDrMjE7hBq4fQV3wYHraitJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzj2bmKhA1a89vhGCTEuFcMrGIAhTIwGn2DOXg1A8iNSPxvh_zK_LmuDa3ZMbEzfBk/Eye_4.gif"); */
 	/* background-image: url("http://assets.stickpng.com/images/580b585b2edbce24c47b2a72.png"); */
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 .header {
-	margin-top: 335px;
+	margin-top: 221px;
 }
 .hero h1 {
 	font-family: 'Lato', sans-serif !important;
@@ -145,7 +146,7 @@ html {
 
 /*ABOUT ME*/
 #section_about_Me {
-	background-color: #0653de26;
+	background-color: black;
 	margin-top: 67px;
 	padding-top: 15px;
 	padding-bottom: 57px;
@@ -166,6 +167,9 @@ html {
 }
 .image-developer {
 	width: 100%;
+}
+#text-aboutMe {
+	color: white;
 }
 
 .container__personalInfo,
@@ -195,12 +199,12 @@ html {
 }
 strong {
 	position: relative;
-	box-shadow: inset 0 -0.5em 0 rgb(63 208 166 / 45%);
+	box-shadow: inset 0 -0.5em 0 rgb(63 69 208 / 69%);
 	transition: box-shadow .2s ease-in-out;
 	cursor: pointer;
 }
 strong:hover {
-	box-shadow: inset 0 -1.5em 0 rgb(63 208 166 / 45%);
+	box-shadow: inset 0 -1.5em 0 rgb(63 69 208 / 69%);
 }
 #download_cv {
 	font-family: 'Open Sans', sans-serif;
